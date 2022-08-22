@@ -21,26 +21,24 @@
     session_start();
     $user = $_SESSION["user_id"];
 
-    echo "before copy";
     //copy rows in cart into purchased_items table
     $copyAndInsertQuery = "INSERT INTO purchased_items (game_name, img_link, platform, quantity, price, user_id) SELECT game_name, img_link, platform, quantity, price, user_id FROM cart WHERE user_id='$user'";
     
     if ($conn->query($copyAndInsertQuery) === TRUE) {
-        echo "<div>copied successfully</div>";
+        echo "copied successfully";
     } else {
-        echo "<div> Error: " . $copyAndInsertQuery . "<br>" . $conn->error . "</div>";
+        echo "Error: " . $copyAndInsertQuery . "<br>" . $conn->error  ;
     }
 
-    echo "before delete";
+
     //Delete item(s) from cart 
-    $deleteQuery = " DELETE * FROM cart WHERE user_id='$user'";
+    $deleteQuery = " DELETE FROM cart WHERE user_id='$user'";
     if ($conn->query($deleteQuery) === TRUE) {
-        echo "<div>Query executed successfully</div>";
+        echo "Query executed successfully";
     } else {
-        echo "<div>Error: " . $deleteQuery . "<br>" . $conn->error ."</div>";
+        echo "Error: " . $deleteQuery . "<br>" . $conn->error ;
     }
 
-    echo "end of tag";
 ?>
 
 <div class="receive-payment-container">
