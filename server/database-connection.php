@@ -1,4 +1,7 @@
 <?php
+
+
+echo "THis is from connection.php";
 // Create connection
 
 //$user = "root";
