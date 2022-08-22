@@ -84,8 +84,6 @@
                 } else {
                     echo "Your cart is empty. Visit our store to get your favorite now!";
                 }
-
-                $conn->close();
             ?>
             </li>
 
