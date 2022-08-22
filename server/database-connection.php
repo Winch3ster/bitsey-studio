@@ -1,13 +1,7 @@
 <?php
 
 
-echo "THis is from connection.php";
 // Create connection
-
-//$user = "root";
-//$password = "";
-//$database = "Bitsey";
-//$conn = new mysqli('localhost', $user, $password, $database);
 
 
 //Get Heroku ClearDB connection information
@@ -29,5 +23,5 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-echo "THis is from connection.php end";
+
 ?>

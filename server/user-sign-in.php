@@ -13,7 +13,6 @@
 <body>
     <?php
 
-    echo "Please run";
 
     include_once("./database-connection.php");
 

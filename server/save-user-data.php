@@ -11,7 +11,7 @@
 </head>
 <body>
 <?php
-    echo "svae user data.php start";
+
     include_once("./database-connection.php");
 
     $fullName = $_POST["name"];
@@ -71,7 +71,6 @@
         }
     }
 
-    echo "svae user data.php end";
 
 ?>
 </body>

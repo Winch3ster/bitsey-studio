@@ -46,9 +46,9 @@ showPaymentContainer.addEventListener('click', ()=>{
         paymentInformation.style.display = 'block';
         personalInformation.style.display = 'none';
         addressInformation.style.display = 'none';
-        console.log('showPaymentContainer');
+     
     } else{
-        console.log('no validation occured')
+
         return false;
     }
 
