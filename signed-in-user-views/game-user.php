@@ -29,7 +29,15 @@
             <div class="navigation-block-webpage last-item"><a href="./contact-us-user.php">Support</a></div>
         </div>
         
-        <div class="cart-container"><img src="../Images/Store-images/user.png" alt=""></div>
+        <div class="user-container">
+            <img id="user-icon" src="../Images/Store-images/user.png" alt="">
+            <div id="sign-out-container">
+                <div class="sign-out-btn">
+                    <button style="margin: auto;" class="primary-btn-style" onclick="window.open('../store.html', '_self')">Sign Off</button>
+                </div>
+            </div>
+        </div>
+        
         <div class="cart-container"> <a href="../server/cart.php"><img src="../Images/shopping-cart (1).png" alt=""></a></div>
         <div class="drop-down">
             <img id="drop-down" src="../Images/dropdownmenu.png" alt="">

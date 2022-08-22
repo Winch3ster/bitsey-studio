@@ -1,20 +1,20 @@
-var toReceiveContainer =document.getElementById('to-receive-container');
+var purchaseHistoryContainer =document.getElementById('purchase-history-container');
 var shoppingCartContainer =document.getElementById('shopping-cart-container');
 var shoppingCartNav =document.getElementById('shopping-cart-nav');
-var toReceiveNav =document.getElementById('to-receive-nav');
+var historyNav =document.getElementById('history-nav');
 
 function showShoppingCart(){
-    toReceiveContainer.style.display = 'none';
+    purchaseHistoryContainer.style.display = 'none';
     shoppingCartContainer.style.display = 'block';
     shoppingCartNav.style.textDecoration = 'underline';
-    toReceiveNav.style.textDecoration = 'none';
+    historyNav.style.textDecoration = 'none';
 }
 
 
-function showToReceive(){
-    toReceiveContainer.style.display = 'block';
+function showPurchaseHistory(){
+    purchaseHistoryContainer.style.display = 'block';
     shoppingCartContainer.style.display = 'none';
-    toReceiveNav.style.textDecoration = 'underline';
+    historyNav.style.textDecoration = 'underline';
     shoppingCartNav.style.textDecoration = 'none';
 }
 

@@ -60,7 +60,7 @@
             <p>Sign Off</p>
         </div>
         <div class="navigation-container-bottom">
-            <div id="cart-bottom"class="navigation-bottom-img"><img src="../Images/shopping-cart (1).png" alt=""></div>
+            <div id="cart-bottom" class="navigation-bottom-img"><img src="../Images/shopping-cart (1).png" alt=""></div>
             <p>Cart</p>
         </div>
     </div>
@@ -374,7 +374,7 @@
     }
     var cartBottom =document.getElementById('cart-bottom');
     cartBottom.addEventListener('click', ()=>{
-        window.open("../server/cart.php")
+        window.open("../server/cart.php", "_self");
     });
 
     var cartBottom =document.getElementById('sign-in-bottom');

@@ -11,8 +11,35 @@
     <title>Bitsey Official Store</title>
 </head>
 <body>
+<?php
+    //Due to time and knowledge constraint I could not implement further data manipulation on the purchased item(s)
+    //Hence, once user click on purchase the his/her cart will be emptied
+    include_once("./database-connection.php");
 
 
+    session_start();
+    $user = $_SESSION["user_id"];
+
+
+    //copy rows in cart into purchased_items table
+    $copyAndInsertQuery = "INSERT INTO purchased_items (game_name, img_link, platform, quantity, 'user_id') SELECT ( game_name, img_link, platform, quantity, 'user_id') FROM cart WHERE user_id='$user'";
+    
+    if ($conn->query($copyAndInsertQuery) === TRUE) {
+        echo "copied successfully";
+    } else {
+        echo "Error: " . $insertQuery . "<br>" . $conn->error;
+    }
+
+    
+    //Delete item(s) from cart 
+    $deleteQuery = " DELETE * FROM cart WHERE user_id='$user'";
+    if ($conn->query($deleteQuery) === TRUE) {
+        echo "Query executed successfully";
+    } else {
+        echo "Error: " . $insertQuery . "<br>" . $conn->error;
+    }
+
+?>
 
 <div class="receive-payment-container">
     <div class="modal-box-content-container">
@@ -25,6 +52,9 @@
 </body>
 
 <script>
+
+
+
     function backToStore(){
         window.open("../signed-in-user-views/store-user-signed-in.php", "_self");
     }

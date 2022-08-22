@@ -35,6 +35,8 @@
     <div class="purchase-info-container">
         <div class="purchase-info-navigation">
             <p id="shopping-cart-nav" onclick="showShoppingCart()">Shopping Cart</p>
+            <div class="vertical-line"></div>
+            <p id="history-nav" onclick="showPurchaseHistory()">Purchase History</p>
         </div>
 
         <div id="shopping-cart-container">
@@ -96,6 +98,61 @@
             </div>
         </div>
 
+        <div id="purchase-history-container">
+            
+            <div id="shopping-cart-container">
+                <li class="cart-list">
+                <?php
+                //Since the structure of purchase history data representation is similar to cart, hence thecontent will share the same class name as 
+                //in cart to reduce css code
+                include_once("./database-connection.php");
+                session_start();
+
+                $user = $_SESSION["user_id"];
+                $getPurchaseHistory = "SELECT game_name, img_link, platform, quantity, price FROM purchased_items WHERE user_id='$user'";
+                $result = $conn->query($getPurchaseHistory);
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                        echo '
+                            <div id="'.$row["game_name"].$row["platform"].'" class="cart-game-block">
+                                <div class="cart-game-img-container"><img src="'.$row["img_link"].' " alt=""></div>
+                                <div class="cart-block-content">
+                                    <div class="cart-game-description">
+                                        <p>'. $row["game_name"].'</p>';
+
+                                        //Decide which label to render in the cart for each label (ps4, ps5 or pc) different design will be used
+                                        if ($row["platform"] == "ps4") {
+                                            echo '<div class="label ps-4">PS4</div>';
+                                        } elseif ($row["platform"] == "ps5") {
+                                            echo '<div class="label ps-5">PS5</div>';
+                                        } else{
+                                            echo '<div class="label pc">PC</div>';
+                                        }
+
+
+                            echo            '<p class="quantity">Quantity: <span>'. $row["quantity"] . '</span></p>
+                                    </div>
+                                    <div class="cart-game-price">
+                                        <p>Price: <span class="game-price">'. $row["price"]*$row["quantity"]. '</span></p>
+                                    </div>
+                                </div>        
+                            </div>   
+                        ';
+
+                    }
+                } else {
+                    echo "No purchase history found";
+                }
+
+                $conn->close();
+            ?>
+    
+                </li>
+            </div>
+
+
+        </div>
     </div>
 
 

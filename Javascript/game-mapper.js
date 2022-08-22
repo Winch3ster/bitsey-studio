@@ -11,7 +11,7 @@ var errorMessage = document.getElementById('error-message');
 var price = document.getElementById('price');
 var pageTitle = document.getElementById('page-title');
 console.log("game mapper running");
-fetch("../Views/gameList.json")
+fetch("../gameList.json")
 .then(response => {
     return response.json();
 })
