@@ -22,7 +22,7 @@
 
 
     //copy rows in cart into purchased_items table
-    $copyAndInsertQuery = "INSERT INTO purchased_items (game_name, img_link, platform, quantity, 'user_id') SELECT ( game_name, img_link, platform, quantity, 'user_id') FROM cart WHERE user_id='$user'";
+    $copyAndInsertQuery = "INSERT INTO purchased_items (game_name, img_link, platform, quantity, price, user_id) SELECT ( game_name, img_link, platform, quantity, price, user_id) FROM cart WHERE user_id='$user'";
     
     if ($conn->query($copyAndInsertQuery) === TRUE) {
         echo "copied successfully";
