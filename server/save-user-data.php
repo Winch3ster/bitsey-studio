@@ -11,6 +11,7 @@
 </head>
 <body>
 <?php
+    echo "svae user data.php start";
     include_once("./database-connection.php");
 
     $fullName = $_POST["name"];
@@ -34,7 +35,7 @@
     $cvv = $_POST["cvv"];
 
 
-    $saveCustomerDetailsQuery = " INSERT INTO customer_details (full_name, contact, email, user_password, customer_address, card_holder_name, card_number, expire_date, cv) VALUES ('$fullName', '$contact', '$email', '$password', '$address', '$cardHolderName', '$cardNumber', '$expireDate', '$cvv' )";
+    $saveCustomerDetailsQuery = " INSERT INTO customer_details (full_name, contact, email, user_password, customer_address, card_holder_name, card_number, expire_date, cvv) VALUES ('$fullName', '$contact', '$email', '$password', '$address', '$cardHolderName', '$cardNumber', '$expireDate', '$cvv' )";
 
 
     $checkIfExistQuery = " SELECT * FROM customer_details WHERE email='$email'";
@@ -70,6 +71,7 @@
         }
     }
 
+    echo "svae user data.php end";
 
 ?>
 </body>
