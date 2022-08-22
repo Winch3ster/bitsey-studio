@@ -1,0 +1,317 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.welcome-user-container{
+    width: 94%;
+    margin: auto;
+    padding: 1% 3%;
+    border-top: 2px solid #e9e9f2;
+    text-align: center;
+}
+
+
+
+
+
+#horizon-forbidden-west-trailer {
+    position: absolute;
+    width: 100%; 
+    height:100%;
+  }
+
+.featured-game-top-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/Store-images/horizon-forbidden-west.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.gradient{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(23,23,27,0) 41%, rgba(32,32,32,0) 100%);
+}
+.featured-game-top-content-container{
+    width: 55%;
+    height: fit-content;
+    color: white;
+    margin-left: 7%;
+    z-index: 2;
+}
+.featured-game-top-container-smallscreen{
+    display: none;
+}
+
+/* button initial space*/
+.horizon-forbbiden-west-banner{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.horizon-forbbiden-west-banner img{
+    width: 100%;
+    height: 90%;
+}
+.horizon-forbidden-west-new-feature{
+    width: 100%;
+    height: fit-content;
+}
+.horizon-forbidden-west-new-feature h1{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    color: rgb(3, 139, 165);
+}
+.new-feature-content-row{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+}
+.new-feature{
+    width: 40%;
+    height: 50%;
+}
+.new-feature img{
+    width: 100%;
+    height: auto;
+}
+.HFW-editions-container{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+.HFW-edition-header-container{
+    position: relative;
+    height: auto;
+    width: 100%;
+
+}
+.HFW-edition-header-container img{
+    position: absolute;
+    width: 15%;
+    height: auto;
+
+}
+.HFW-header-title p{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.HFW-header-title h2{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.ps-label-container{
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+.ps4-label{
+    padding: 10px 45px;
+    background-color: rgb(5,54,145);
+    border-radius: 5px;
+    color: white;
+}
+.ps5-label{
+    padding: 10px 45px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+.edition-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+.HFW-edition{
+    width: 38%;
+    height: fit-content;
+    color: white;
+    background-color: rgb(30,31,35);
+    padding-bottom: 2%;
+    transition: 0.5s;
+}
+.HFW-edition:hover{
+    transform: scale(1.05);
+}
+.HFW-edition img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+.edition-btn-container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.four-column-container{
+    position: relative;
+    width: 95%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.two-column-container{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.game-container{
+    position: relative;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #5f2c82, #49a09d);
+    border-radius: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.two-column{
+    width: 44%;
+}
+.game-container img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+.game-container p{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.game-container:hover{
+    transform: translate(0px, -10px);
+}
+.game-container img:hover{
+    opacity: 0.1;
+}
+
+#sales-section{
+    width: 100%;
+    height: fit-content;
+}
+.sales-title-container{
+    width: 100%;
+}
+.sales-title-container h1{
+    width: 100%;
+    text-align: center;
+    color: rgb(3, 139, 165);
+}
+.sales-title-container p{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: #494949;
+}
+.discount-tag{
+    position: absolute;
+    left: 0px;
+    top: 10%;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: rgb(3, 139, 165);
+    color: white;
+    text-align: center;
+}
+#all-games-section{
+    width: 100%;
+    height: fit-content;
+}
+.all-games-title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: rgb(3, 139, 165);
+    font-size: 2rem;
+}
+
+.why-buy-at-bitsey-section{
+    width: 100%;
+    height: fit-content;
+}
+.why-buy-at-bitsey-section p{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: rgb(3, 139, 165);
+    font-size: 2rem;
+}
+
+.why-buy-at-bitsey-content-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.why-buy-at-bitsey-content-container p{
+    font-size: 1.2rem;
+}
+
+.content-block{
+    position: relative;
+    width: 30%;
+    height: auto;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content-block img{
+    display: block;
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.1rem;} }
+@media (min-width:1100px) { body {font-size:1.2rem;} }

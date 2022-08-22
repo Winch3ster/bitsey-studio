@@ -1,0 +1,193 @@
+[
+    {
+        "gameName" : "Battlefield V",
+        "description": "This is the ultimate Battlefield V experience. Enter mankind’s greatest conflict with the complete arsenal of weapons, vehicles, and gadgets plus the best customization content of Year 1 and 2.",
+        "availableQuantity": 5,
+        "pictureUrl" : "Images/Store-images/Games/bfv.jpg",
+        "price": 189.90
+    },
+  
+    {
+        "gameName" : "Lego Star Wars",
+        "description": "The galaxy is yours with LEGO Star Wars: The Skywalker Saga! Play through all nine Star Wars saga films in a brand-new LEGO video game unlike any other. Experience fun-filled adventures, whimsical humor, and the freedom to fully immerse yourself in the LEGO Star Wars universe like never before.",
+        "pictureUrl" : "Images/Store-images/Games/lego-star-wars.jpg",
+        "availableQuantity": 10,
+        "price": 170.90
+    },
+
+    {
+        "gameName" : "FIFA 23",
+        "description": "FIFA 23 brings The World’s Game to the pitch, with HyperMotion2 Technology that delivers even more gameplay realism, men’s and women’s FIFA World Cup™ coming during the season, women’s club teams, cross-play features*, and more.",
+        "pictureUrl" : "Images/Store-images/Games/fifa23.jpg",
+        "availableQuantity": 10,
+        "price": 239.00
+    },
+
+    {
+        "gameName" : "Farcry 5",
+        "description": "Welcome to Hope County, Montana, land of the free and the brave but also home to a fanatical doomsday cult known as the Project at Eden’s Gate. Stand up to cult leader Joseph Seed, and his siblings, the Heralds, to spark the fires of resistance and liberate the besieged community.",
+        "pictureUrl" : "Images/Store-images/Games/farcry5.jpg",
+        "availableQuantity": 7,
+        "price": 199.00
+    },
+    {
+        "gameName" : "Ghost Of Tsushima",
+        "description": "The year is 1274. Samurai warriors are the legendary defenders of Japan—until the fearsome Mongol Empire invades the island of Tsushima, wreaking havoc and conquering the local population. As one of the last surviving samurai, you rise from the ashes to fight back. But honorable tactics won’t lead you to victory. You must move beyond your samurai traditions to forge a new way of fighting—the way of the Ghost—as you wage an unconventional war for the freedom of Japan.",
+        "pictureUrl" : "Images/Store-images/Games/ghost-of-tsushima.jpg",
+        "availableQuantity": 10,
+        "price": 230.00
+    },
+    {
+        "gameName" : "Red Dead Redemption 2",
+        "description": "America, 1899. The end of the Wild West era has begun as lawmen hunt down the last remaining outlaw gangs. Those who will not surrender or succumb are killed. After a robbery goes terribly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal, and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.",
+        "pictureUrl" : "Images/Store-images/Games/rdr2.jpg",
+        "availableQuantity": 10,
+        "price": 219.00
+    },
+    {
+        "gameName" : "For Honor",
+        "description": "Enter the chaos of war as a bold Knight, brutal Viking, or deadly Samurai, three of the greatest legacies of warriors.",
+        "pictureUrl" : "Images/Store-images/Games/for-honor.jpg",
+        "availableQuantity": 5,
+        "price": 219.00
+    },
+    {
+        "gameName" : "Monster Hunter World",
+        "description": "Welcome to a new world! Take on the role of a hunter and slay ferocious monsters in a living, breathing ecosystem where you can use the landscape and its diverse inhabitants to get the upper hand. Hunt alone or in co-op with up to three other players, and use materials collected from fallen foes to craft new gear and take on even bigger, badder beasts!",
+        "pictureUrl" : "Images/Store-images/Games/monster-hunter-world.jpg",
+        "availableQuantity": 6,
+        "price": 164.00
+    },
+    {
+        "gameName" : "Battlefield 1",
+        "description": "Join the strong Battlefield™ community and jump into the epic battles of The Great War in this critically acclaimed first-person shooter. Hailed by critics, Battlefield 1 was awarded the Games Critics Awards Best of E3 2016: Best Action Game and gamescom Best Action Game award for 2016.",
+        "pictureUrl" : "Images/Store-images/Games/bf1.jpg",
+        "availableQuantity": 4,
+        "price": 159.00
+    },
+
+    {
+        "gameName" : "Fall Guys",
+        "description": "Welcome to Fall Guys: Free for All! You’re invited to dive and dodge your way to victory in the pantheon of clumsy. Rookie or pro? Solo or partied up? Fall Guys delivers ever-evolving, high-concentrated hilarity and fun!",
+        "pictureUrl" : "Images/Store-images/Games/fall-guys.jpg",
+        "availableQuantity": 9,
+        "price": 170.90
+    },
+    
+    {
+        "gameName" : "Resident Evil VII",
+        "description": "Set in modern day rural America and taking place after the dramatic events of Resident Evil® 6, players experience the terror directly from the first person perspective. Resident Evil 7 embodies the series’ signature gameplay elements of exploration and tense atmosphere that first coined “survival horror” some twenty years ago; meanwhile, a complete refresh of gameplay systems simultaneously propels the survival horror experience to the next level.",
+        "pictureUrl" : "Images/Store-images/Games/resident-evil-biohazard.jpg",
+        "availableQuantity": 10,
+        "price": 69.00
+    },
+    
+    {
+        "gameName" : "Call Of Duty WWII",
+        "description": "Call of Duty® returns to its roots with Call of Duty®: WWII - a breathtaking experience that redefines World War II for a new gaming generation. Land in Normandy on D-Day and battle across Europe through iconic locations in history’s most monumental war. Experience classic Call of Duty combat, the bonds of camaraderie, and the unforgiving nature of war against a global power throwing the world into tyranny.",
+        "pictureUrl" : "Images/Store-images/Games/cod-ww2.jpg",
+        "availableQuantity": 10,
+        "price": 226.00
+    },
+    
+    {
+        "gameName" : "God Of War Ragnarok",
+        "description": "From Santa Monica Studio comes the sequel to the critically acclaimed God of War (2018). Fimbulwinter is well underway. Kratos and Atreus must journey to each of the Nine Realms in search of answers as Asgardian forces prepare for a prophesied battle that will end the world. Along the way they will explore stunning, mythical landscapes, and face fearsome enemies in the form of Norse gods and monsters. The threat of Ragnarök grows ever closer. Kratos and Atreus must choose between their own safety and the safety of the realms.",
+        "pictureUrl" : "Images/Store-images/Games/God-of-war-ragnarok.jpg",
+        "availableQuantity": 10,
+        "price": 249.00
+    },
+    
+    {
+        "gameName" : "NBA 2K22",
+        "description": "NBA 2K22 puts the entire basketball universe in your hands. PLAY NOW in real NBA and WNBA environments against authentic teams and players. Build your own dream team in MyTEAM with today’s stars and yesterday’s legends. Live out your own pro journey in MyCAREER and experience your personal rise to the NBA. Flex your management skills as a powerful Executive in MyGM and MyLEAGUE. Anyone, anywhere can hoop in NBA 2K22.",
+        "pictureUrl" : "Images/Store-images/Games/nba22.jpg",
+        "availableQuantity": 10,
+        "price": 189.00
+    },
+    
+    {
+        "gameName" : "Tom Clancy's Rainbow Six Siege",
+        "description": "Master the art of destruction and gadgetry in Tom Clancy’s Rainbow Six Siege. Face intense close quarters combat, high lethality, tactical decision making, team play and explosive action within every moment. Experience a new era of fierce firefights and expert strategy born from the rich legacy of past Tom Clancy's Rainbow Six games.",
+        "pictureUrl" : "Images/Store-images/Games/r6-siege.jpg",
+        "availableQuantity": 10,
+        "price": 65.00
+    },
+
+    {
+        "gameName" : "No Man's Sky",
+        "description": "No Man's Sky is an action-adventure survival game developed and published by Hello Games. It was released worldwide for the PlayStation 4 and Microsoft Windows in August 2016, for Xbox One in July 2018, and for the PlayStation 5 and Xbox Series X and Series S consoles in November 2020.",
+        "pictureUrl" : "Images/Store-images/Games/no-man-sky.jpg",
+        "availableQuantity": 10,
+        "price": 105.00
+    },
+
+    {
+        "gameName" : "FIFA 22",
+        "description": "Powered by Football™, EA SPORTS™ FIFA 22 brings the game even closer to the real thing with fundamental gameplay advances and a new season of innovation across every mode.",
+        "pictureUrl" : "Images/Store-images/Games/fifa22.jpg",
+        "availableQuantity": 10,
+        "price": 199.00
+    },
+
+    {
+        "gameName" : "Horizon Zero Dawn",
+        "description": "Experience Aloy’s entire legendary quest to unravel the mysteries of a world ruled by deadly Machines. An outcast from her tribe, the young hunter fights to uncover her past, discover her destiny… and stop a catastrophic threat to the future. Unleash devastating, tactical attacks against unique Machines and rival tribes as you explore an open world teeming with wildlife and danger. Horizon Zero Dawn™ is a multi-award-winning action role-playing game – and this Complete Edition for PC includes the huge expansion The Frozen Wilds, featuring new lands, skills, weapons and Machines.",
+        "pictureUrl" : "Images/Store-images/Games/horizon-zero-dawn.jpg",
+        "availableQuantity": 10,
+        "price": 209.00
+    },
+
+    {
+        "gameName" : "Minecraft",
+        "description": "Explore infinite worlds and build everything from the simplest of homes to the grandest of castles. Play in creative mode with unlimited resources or mine deep into the world in survival mode, crafting weapons and armor to fend off dangerous mobs.",
+        "pictureUrl" : "Images/Store-images/Games/minecraft.jpg",
+        "availableQuantity": 10,
+        "price": 90.00
+    },
+
+    {
+        "gameName" : "Elden Ring",
+        "description": "In the Lands Between ruled by Queen Marika the Eternal, the ELDEN RING, the source of the Erdtree, has been shattered. Marika's offspring, demigods all, claimed the shards of the ELDEN RING known as the Great Runes, and the mad taint of their newfound strength triggered a war: The Shattering. A war that meant abandonment by the Greater Will. And now the guidance of grace will be brought to the Tarnished who were spurned by the grace of gold and exiled from the Lands Between. Ye dead who yet live, your grace long lost, follow the path to the Lands Between beyond the foggy sea to stand before the ELDEN RING. And become the Elden Lord.",
+        "pictureUrl" : "Images/Store-images/Games/elden-ring.jpg",
+        "availableQuantity": 7,
+        "price": 239.00
+    },
+
+    {
+        "gameName" : "Cyberpunk 2077",
+        "description": "Cyberpunk 2077 is an open-world, action-adventure RPG set in the megalopolis of Night City, where you play as a cyberpunk mercenary wrapped up in a do-or-die fight for survival. Improved and featuring all-new free additional content, customize your character and playstyle as you take on jobs, build a reputation, and unlock upgrades. The relationships you forge and the choices you make will shape the story and the world around you. Legends are made here. What will yours be?",
+        "pictureUrl" : "Images/Store-images/Games/cyberpunk.jpg",
+        "availableQuantity": 6,
+        "price": 219.00
+    },
+
+    {
+        "gameName" : "Bugsnax",
+        "description": "Bugsnax takes you on a journey to Snaktooth Island, home of the legendary half-bug half-snack creatures, Bugsnax. Invited by intrepid explorer Elizabert Megafig, you arrive to discover your host nowhere to be found, her camp in shambles, and her followers scattered across the island alone... and hungry! It's up to you to solve the mysteries of Snaktooth Island: What happened to Lizbert? What are Bugsnax and where do they come from? But most of all, why do they taste SO GOOD?",
+        "pictureUrl" : "Images/Store-images/Games/bugsnax.jpg",
+        "availableQuantity": 10,
+        "price": 44.00
+    },
+    {
+        "gameName" : "Horizon Forbidden West",
+        "description": "Join Aloy as she braves the Forbidden West, a majestic but dangerous frontier that conceals mysterious new threats. Explore distant lands, fight bigger and more awe-inspiring machines, a nd encounter astonishing new tribes as you return to the far-future, post-apocalyptic world of Horizon.",
+        "pictureUrl" : "Images/Store-images/Games/bugsnax.jpg",
+        "availableQuantity": 7,
+        "price": 249.00
+    },
+    {
+        "gameName" : "Horizon Forbidden West Collector Edition",
+        "description": "A must-have collector edition with a physical disc copy for PS4, which also features exclusive soundtrack ( redeem via voucher), limited edition statue and more!",
+        "pictureUrl" : "Images/Store-images/horizoncollectors.jpg",
+        "availableQuantity": 5,
+        "price": 890.00
+    },
+    {
+        "gameName" : "Horizon Forbidden West Special Edition",
+        "description": "A gorgeous SteelBook with a physical disc copy for PS4, which also features the digital soundtrack (via voucher), as well as a mini art book.",
+        "pictureUrl" : "Images/Store-images/horizon-special-edi.jpg",
+        "availableQuantity": 5,
+        "price": 309.90
+    }
+]

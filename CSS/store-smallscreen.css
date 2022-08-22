@@ -1,0 +1,107 @@
+.welcome-user-container{
+    font-size: 0.6rem;
+}
+
+.user-container-html{
+    display: none;
+}
+.featured-game-top-container{
+    display: none;
+}
+.featured-game-top-container-smallscreen{
+    display: block;
+}
+.featured-game-top-container-img-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+.gradient.smallscreen{
+    height: 100%;
+}
+.featured-game-top-container-img-container img{
+    width: 100%;
+    height: fit-content;
+}
+
+.featured-game-top-container-img-container h1{
+    position: absolute;
+    width: 80%;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.featured-game-top-content-container-smallscreen{
+    width: 85%;
+    margin: auto;
+    color: black;
+}
+.featured-game-top-content-container-smallscreen h1{
+    text-align: center;
+}
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+}
+.horizon-forbidden-west-new-feature h1{
+    width: 80%;
+}
+.new-feature-content-row{
+    display: block;
+    width: 100%;
+}
+.new-feature{
+    width: 85%;
+    margin: auto;
+}
+.HFW-edition-header-container img{
+    position: relative;
+    width: 30%;
+}
+.HFW-header-title h2{
+    width: 85%;
+}
+.edition-container{
+    display: block;
+}
+.HFW-edition{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+.sales-title-container h1{
+    width: 85%;
+    margin: auto;
+}
+.four-column-container{
+    position: relative;
+    width: 95%;
+    margin: auto;
+    height: fit-content;
+    display: block;
+}
+.two-column-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.why-buy-at-bitsey-content-container{
+    display: block;
+}
+.all-games-title{
+    width: 85%;
+    margin-bottom: 5%;
+}
+.content-block{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}

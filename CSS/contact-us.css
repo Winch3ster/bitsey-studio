@@ -1,0 +1,29 @@
+.contact-us-container{
+    position: relative;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url("../Images/contact-us-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact-us-content{
+    position: relative;
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    background-color: white;
+    padding: 2%;
+    font-size: 1rem;
+}
+
+.contact-us-content h1{
+    color: rgb(3, 139, 165);
+}
+.contact-us-content h2{
+    color: rgba(23, 23, 23, 0.5);
+}
+.contact-us-content a{
+    color: rgb(3, 139, 165);
+}

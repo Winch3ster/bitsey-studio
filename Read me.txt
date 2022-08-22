@@ -1,0 +1,2 @@
+Run XAMPP 
+goto: http://localhost/website/Views/index.html

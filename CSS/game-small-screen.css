@@ -1,0 +1,25 @@
+.game-view-content{
+    display: block;
+}
+
+#game-image{
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+.small-screen-title{
+    display: block;
+    width: 85%;
+    margin: auto;
+}
+.game-view-content-container{
+    margin-top: 5%;
+    width: 95%;
+}
+#game-name, #game-name-bar-widescreen{
+    display: none;
+}
+.modal-box-section{
+    width: 90%;
+}

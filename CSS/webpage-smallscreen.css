@@ -1,0 +1,450 @@
+.header-container{
+    height: 50px;
+    background-color: white;
+    color: rgb(3, 139, 165);;
+    font-size: 1.3rem;
+}
+.header-webpage-smallscreen{
+    height: 50px;
+    background-color: white;
+    color: rgb(3, 139, 165);;
+    font-size: 1.3rem;
+}
+
+
+.company-logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    left: 0;
+}
+.company-logo a img{
+    width: auto;
+    height: 100%;
+    display: block;
+}
+
+
+.close-btn{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    background-color: rgb(23, 23, 23);
+    border-bottom: 1px solid white;
+    align-items: center;
+    justify-content: end;
+}
+
+.navigation-block a{
+    text-decoration: none;
+    color: rgb(3, 139, 165);
+    font-size: 1.2rem;
+}
+.navigation-block-content{
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+    z-index: 2;
+}
+
+.cart-container{
+    display: none;
+}
+.user-container{
+    display: none;
+}
+
+.drop-down{
+    display: flex;
+    width: 15%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5%;
+}
+.drop-down img{
+    width: auto;
+    height: 60%;
+}
+
+.navigation-container{
+    display: none;
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    top: 0;
+    margin-top: 50px;
+    background-color: white;
+    z-index: 2;
+    justify-content: center;
+    animation-name: slide-down;
+    animation-duration: 0.4s;
+    transition: .2s;
+    background-color: white;
+}
+
+@keyframes slide-down {
+    0% {height: 0%;}
+    100%{height: 40%;}
+}
+
+
+
+
+
+
+.navigation-block-webpage{
+    display: flex;
+    height: 19.6%;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    padding: 0%;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+.last-item{
+    border-bottom: none;
+}
+.close-btn{
+    height: 8vh;
+}
+
+.close-btn img{
+    height: 25px;
+    width: auto;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+
+
+.welcome-container{
+    height: 55vh;
+}
+.center{
+    font-size: 10vw;
+    width: 85%;
+}
+.about-us-container{
+    background-image: none;
+    background-color: white;
+}
+.title{
+    width: 70%;
+    font-size: 8vw;
+}
+.title-bar{
+    display: none;
+}
+.about-us-content{
+    width: 80%;
+    text-align: start;
+}
+.hollow-knight{
+    position: relative;
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    margin-top: 3%;
+}
+.discover-our-games-container{
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: block;
+    background-color: rgb(240, 237, 237);
+    padding-bottom: 5%;
+}
+.discover-content-container{
+    position: relative;
+    width: 95%;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: rgb(240, 237, 237);
+    margin-bottom: 5%;
+}
+
+.discover-content{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    font-size: 0.8rem;
+    color: rgb(3, 139, 165);
+    display: block;
+    justify-content: start;
+    align-items: center;
+}
+
+.discover-content h1{
+    width: auto;
+    margin-right: 5%;
+}
+
+.discover-content img{
+    display: none;
+}
+.discover-our-games-container picture img{
+    position: relative;
+    display: block;
+    height: 35vh;
+}
+.small-screen-content{
+    margin-top: -5%;
+    color: black;
+    display: block;
+    font-size: 5vw;
+}
+
+.small-screen-content button{
+    text-decoration: none;
+    height: auto;
+    width: auto;
+    border-radius: 40px;
+    background-color: rgb(3, 139, 165);
+    border: 2px solid rgb(3, 139, 165);
+    color: white;
+    font-size: 1rem;
+    padding: 15px 25px 15px 25px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+}
+
+/*Our values CSS*/
+.row{
+    display: block;
+}
+.our-value-content-block{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+/* Our people CSS*/
+.our-people{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: fit-content;
+}
+.our-people-image-container-small{
+    display: block;
+    position: relative;
+    height: fit-content;
+    width: 100%;
+}
+.our-people-image-container-wide{
+    display: none;
+}
+.our-people-wallpaper{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.our-people-wallpaper-widescreen{
+    display: none;
+}
+
+.our-people-title-container{
+    position: relative;
+    width: 50%;
+    height: auto;
+    color: white;
+    background-color: rgb(3, 139, 165);
+    display: flex;
+    align-items: center;
+    padding: 1% 2% 1% 2%;
+    margin-top: -20%;
+}
+.our-people-title-container h1{
+    font-size: 7vw;
+    margin-left: 20%;
+    margin-right: 5%;
+}
+.our-people-content-container-small{
+    position: relative;
+    width: 80%;
+}
+.our-people-image-container-small p{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.divider{
+    position: relative;
+    width: 80%;
+    height: 2px;
+    margin: auto;
+    background-color: rgb(161, 161, 161);
+    margin-bottom: 5%;
+}
+
+
+/*our studio CSS*/
+.our-studio-container{
+    display: block;
+    margin-bottom: 5%;
+}
+.our-studio-image-smallscreen{
+    display: block;
+    height: auto;
+    width: 90%;
+    margin: auto;
+}
+.our-studio-content-container{
+    padding: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.our-studio-title{
+    margin-left: 5%;
+    width: fit-content;
+}
+.our-studio-title h1{
+    color: rgb(3, 139, 165);
+    font-size: 7vw;
+}
+.our-studio-content{
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+}
+.pictures-container{
+    display: none;
+}
+
+/*Our Team CSS*/
+.our-roles-container{
+    margin: 7%;
+}
+.our-team-list-container{
+    display: block;
+}
+.our-team-container{
+    margin: 7%;
+}
+.small-screen{
+    position: relative;
+    margin-top: 5%;
+}
+
+.role{
+    width: 40%;
+}
+.role img{
+    width: 50%;
+}
+
+.we-are-bitsey-container{
+    height: 70vh;
+    width: 100%;
+    background-image: url(../Images/background\ about\ us\ we\ are\ bitseyt.jpg);
+    background-repeat: no-repeat;
+    background-position: 40% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.we-are-bitsey-container img{
+    height: auto;
+    width: 90%;
+}
+
+#footer {
+    height: fit-content;
+    margin-bottom: 10%;
+}
+
+.footer-company-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.footer-company-logo img{
+    height: 50px;
+}
+.footer-content {
+    height: 80%;
+    display: block;
+}
+.footer-links-container {
+    width: 100%;
+}
+.footer-links-container a{
+    font-size: 1rem;
+}
+
+
+
+.footer-follow-us-container {
+    margin-bottom: 10%;
+    width: 100%;
+}
+
+.footer-disclaimer{
+    display: block;
+}
+
+.bottom-navigation{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 9vh;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-top: 2px solid rgb(161, 161, 161);
+}
+
+.navigation-container-bottom{
+    width: 20%;
+    height: 90%;
+}
+.navigation-bottom-img{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation-container-bottom img{
+    position: relative;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.navigation-container-bottom p{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    color: #494949;
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 0%;
+}
+.bottom-buffer{
+    width: 100%;
+    height: 9vh;
+}

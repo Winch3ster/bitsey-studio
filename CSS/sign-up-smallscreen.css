@@ -1,0 +1,19 @@
+.modal-box-container h2, p{
+    margin-left: 0;
+    text-align: center;
+}
+
+
+.danger{
+    padding: 10px 0px;
+    width: 120px;
+    margin:auto;
+    margin-bottom: 5%;
+    border-radius: 40px;
+}
+.confirm{
+    padding: 10px 0px;
+    width: 120px;
+    margin: auto;
+    border-radius: 40px;
+}

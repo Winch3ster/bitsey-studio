@@ -1,0 +1,115 @@
+body{
+    height: 100vh;
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.sign-up-form-container{
+    position: relative;
+    width: 400px;
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 15px;
+    background-color: white;
+}
+.title{
+    position: relative;
+    width: 100%;
+    padding: 3% 0%;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgb(20,118,243);
+}
+.btn{
+    width: 20%;
+    padding: 2% 0%;
+    text-align: center;
+    background-color: rgb(20,118,243);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.green{
+    padding: 2% 3%;
+    background-color: green;
+}
+.btn.button{
+    border: none;
+}
+.text-box{
+    width: 90%;
+    height: 23px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 5%;
+
+}
+#personal-information-container{
+    display: block;
+}
+#address-information{
+    display: none;
+}
+#payment-information{
+    display: none;
+}
+
+.modal-box-container{
+    display: none;
+    /* Taken from https://stackoverflow.com/questions/356809/best-way-to-center-a-div-on-a-page-vertically-and-horizontally */
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin: auto;
+    width: 50vw;
+    min-width: 270px;
+    height: fit-content;
+    padding: 2% 0%;
+    border: 2px solid rgb(20,118,243);
+    border-radius: 20px;
+    background-color: white;
+    animation-name: modal-box-fade-in;
+    animation-duration: 0.3s;
+}
+@keyframes modal-box-fade-in {
+    0%{ transform: scale(0);}
+    100%{ transform: scale(1);}
+}
+
+.modal-box-container h2, p{
+    margin-left: 8%;
+}
+
+
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.danger{
+    background-color: rgb(245, 15, 15);
+    width: 30%
+}
+.confirm{
+    width: 30%;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    border: 1px solid rgb(20,118,243);
+}
+
+.navigate{
+    width: 100;
+    display: flex;
+    justify-content: center;
+}
+.navigate a{
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: rgba(23, 23, 23, 0.7);
+    cursor: pointer;
+}

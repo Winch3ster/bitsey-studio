@@ -1,0 +1,534 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    line-height: 1.5;
+}
+
+.disclaimer{
+    height: 45px;
+    width: 100%;
+    display: block;
+    background-color: rgb(23, 23, 23);
+    color: white;
+}
+.Bitsey{
+    display: flex;
+    height: 100%;
+    width: auto;
+    margin-left: 60px;
+    align-items: center;
+}
+
+.header-container{
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    color: rgb(3, 139, 165);
+    font-size: 1.3rem;
+
+}
+
+.company-logo{
+    width: 30%;
+    height: 80%;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.company-logo a{
+    width: fit-content;
+    width: -moz-fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.company-logo a img{
+    height: 100%;
+    width: auto;
+    margin-right: 3%;
+}
+
+.navigation-container{
+    position: relative;
+    width: 75%;
+    height: 100%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navigation-block{
+    display: block;
+    width: 20%;
+    height: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0%;
+    transition: .2s;
+    cursor: pointer;
+}
+.navigation-block a{
+    text-decoration: none;
+    color: rgb(3, 139, 165);
+}
+.navigation-block-content{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-block-content a{
+    font-size: 1rem;
+}
+
+.focus-bar{
+    position: relative;
+    display: none;
+    background-color: rgb(3, 139, 165);
+    height: 10%;
+    width: 0%;
+    animation-name: appear;
+    animation-duration: 0.4s;
+}
+
+@keyframes appear {
+    0%{width: 0%;}
+    100%{width: 100%;}
+    
+}
+.navigation-block:hover .focus-bar{
+    display: block;
+    width: 100%;
+}
+
+
+.cart-container{
+    height: 40px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-logo{
+    height: 80%;
+    width: auto;
+    color: blue;
+    cursor: pointer;
+}
+.drop-down{
+    display: none;
+}
+
+
+
+/*Advertisement slide show */
+
+.advertisement-container{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: block;
+    padding: 0%;
+    justify-content: center;
+
+}
+
+.advertisement-container .img{
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    transition: all 2s linear;
+}
+.advertisement-container img{
+    width: 100%;
+    height: 700px;
+}
+
+.last-btn, .next-btn{
+    position: absolute;
+    bottom: 50%;
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.4s ease;
+    user-select: none;
+    cursor: pointer;
+}
+.last-btn{
+    padding: 5px 10px 5px 20px;
+    border-radius: 0 6px 6px 0;
+}
+.next-btn{
+    padding: 5px 20px 5px 10px;
+    right: 0;
+    border-radius: 6px 0 0 6px;
+}
+
+
+
+.last-btn:hover, .next-btn:hover{
+    background-color: rgba(0,0,0 , 0.6);
+}
+
+.dot-container{
+    width: 100%;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 650px;
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Changing slide animation*/
+.fade-in{
+    animation: fade;
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+/*Explore more games CSS*/
+
+.explore-more-games-section{
+    margin-top: 2%;
+    display: block;
+    height: 50%;
+    width: 100%;
+    justify-content: center; 
+    margin-bottom: 2%;
+}
+
+.explore-more-games-title{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color:rgb(3, 139, 165);
+}
+.explore-more-games-selection{
+    position: relative;
+    width:95%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    margin-top:4%;
+    margin-bottom:2%;
+}
+.game-container{
+    margin:auto;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+padding:0;
+}
+.game-container:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0px 10px 8px #888888;
+    -webkit-box-shadow: 0px 10px 8px #888888;
+    -moz-box-shadow: 0px 10px 8px #888888;
+}
+
+.game-pic-container{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.game-pic-container img{
+    position: relative;
+    width:auto;
+    height: 170px;
+    margin: auto;
+}
+
+.game-name-container{
+    margin-top: 2%;
+    position: relative;
+    width: 80%;
+    height: 25%;
+    margin: auto;
+}
+.game-name-container p, .game-name-container h3 {
+    position: relative;
+    text-align: center;
+}
+.game-name-container h3 {
+    color: rgb(3, 139, 165);
+}
+
+
+.view-more-games-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.visit-store-btn{
+    width: 130px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: rgb(23, 23, 23);
+    color: white;
+    border: 2px solid rgb(23, 23, 23);
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    transition: .4s;
+}
+
+.visit-store-btn:hover{
+    background-color: white;
+    color: rgb(23, 23, 23);
+}
+
+/* Join-us section CSS code */
+.join-us-title{
+    font-family: 'Montserrat';
+    text-align: center;
+    color: rgba(23, 23, 23, 0.7);
+    width: 85%;
+    margin: auto;
+
+}
+.join-us-description{
+    width: 85%;
+    margin: auto;
+    font-size: 1.2rem;
+}
+.join-us-lower-container{
+    margin-top: 5%;
+    width: 100%;
+    height: 40%;
+    padding:0%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-block{
+    width: 35%;
+}
+.content-block img{
+    width: 100%;
+    height: 50%;
+}
+.content-block-description{
+    width: 100%;
+    padding: 0%;
+    height: fit-content;
+}
+
+
+#enquire-btn{
+    font-family: 'Montserrat';
+    padding: 2% 3%;
+    background-color: white;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: auto;
+    border: 2px solid rgb(23, 23, 23);
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#enquire-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+.Build-with-us-container{
+    position: relative;
+    margin-top: 4%;
+    width: 100%;
+    height: 70vh;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+    background-image: url(../Images/build\ with\ us\ cover.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.build-with-us-cover{
+    display: none;
+}
+
+.build-with-us-content{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+
+#build-with-us-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.build-with-us-title-bar{
+    width: 15%;
+    height: 5px;
+    margin:auto;
+    background-color: rgb(3, 139, 165);
+}
+
+.build-with-us-description{
+    width: 80%;
+    margin: auto;
+}
+.build-with-us-description h3{
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+
+
+
+.build-with-us-logo-container{
+    margin: 0%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.game-engine-logo img{
+    width: 60%;
+    height: auto;
+    margin: 4%;
+}
+.game-engine-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer{
+    height: 40%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.footer-container{
+    width: 90%;
+    height: 85%;
+    margin: 2% auto;
+}
+.footer-company-logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.footer-company-logo img{
+    height: 70px;
+    width: auto;
+    margin-right: 1%;
+}
+.footer-content{
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links-container{
+    width: 70%;
+    height: 100%;
+    padding: 0%;
+    display: flex;
+
+}
+.footer-links-container ul{
+    width: 50%;
+}
+
+.footer-links-container li{
+    list-style: none;
+    margin: 2% 0% 2% 0%;
+}
+.footer-links-container a{
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+.column1, .column2{
+    padding: 0%;
+}
+
+.footer-links-container a:hover{
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+.footer-follow-us-container{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+.follow-us-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.follow-us-logo-container a img{
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    transition: .3s;
+}
+.follow-us-logo-container a img:hover{
+    transform: scale(1.5);
+}
+.footer-disclaimer{
+    text-align: center;
+}

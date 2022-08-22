@@ -1,0 +1,222 @@
+.purchase-info-container{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 10%;
+}
+.purchase-info-navigation{
+    position: relative;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    color: rgb(3, 139, 165);
+}
+.purchase-info-navigation p{
+    cursor: pointer;
+}
+
+#shopping-cart-nav{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition: 0.5s;
+}
+
+.vertical-line{
+    position: relative;
+    border-left: 2px solid grey;
+    height: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#shopping-cart-container{
+    display: block;
+}
+.cart-list{
+    list-style: none;
+}
+
+.check-out-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+#to-receive-nav{
+    text-decoration: none;
+}
+
+#to-receive-container{
+    display: none;
+}
+
+
+
+.check-out-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.check-out-container p{
+    margin-right: 5%;
+}
+.primary-btn-style{
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+/*block*/
+.cart-game-block{
+    position: relative;
+    width: 100%;
+    margin:auto;
+    margin-bottom: 5%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(3, 139, 165);
+    transition: 0.3s;
+    border-bottom: 2px solid #e9e9f2;
+}
+
+.cart-game-img-container{
+    width: 20%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-game-img-container img{
+    width: 70%;
+    height: auto;
+}
+.cart-block-content{
+    display: flex;
+    width: 80%;
+}
+.cart-game-description{
+    width: 60%;
+    height: auto;
+}
+.label{
+    background-color: rgb(5,54,145);
+    cursor: default;
+    color: white;
+}
+.label:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+.ps-4{
+    background-color: rgb(5,54,145);
+    color: white;
+    border: 2px solid rgb(5,54,145);
+}
+
+.ps-5{
+    color: black;
+    background-color: white;
+    border: 2px solid rgba(23, 23, 23, 0.8);
+}
+.pc{
+    background-color: rgba(23, 23, 23, 0.8);
+    color: white;
+    border: 2px solid rgba(23, 23, 23, 0.8);
+}
+
+
+.cart-game-price{
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.remove-btn{
+    width: 100px;
+    height: 30px;
+    padding: auto auto;
+    background-color: red;
+    border-radius: 15px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    margin: auto 5% auto 0%;
+    transition: 0.3s;
+}
+
+.remove-btn:hover{
+    background-color: white;    
+    border:1px solid red;
+    color: red;
+}
+
+@media only screen and (max-width: 650px) {
+    .purchase-info-container{
+        width: 85%;
+    }
+    #shopping-cart-container{
+        width: 100%;
+    }
+    .cart-game-block{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+    .cart-game-img-container{
+        position: relative;
+        width: 40%;
+        height: auto;
+    }
+    .cart-game-img-container img{
+        max-width: 150px;
+        width: 100%;
+        height: auto;
+    }
+    .cart-block-content{
+        display: block;
+        position: relative;
+        width: 55%;
+        margin-left: 5%;
+    }
+    .cart-game-description{
+        width: 100%;
+    }
+    .label{
+        font-size: 0.6rem;
+    }
+    .cart-game-price{
+        width: 100%;
+    }
+}
+
+
+
+
+/*
+<div class="cart-game-block">
+                    <div class="cart-game-img-container"><img src="./Images/Store-images/Games/bf1.jpg" alt=""></div>
+                    <div class="cart-block-content">
+                        <div class="cart-game-description">
+                            <p>Battlefield 1</p>
+                            <div class="label">ps4 </div>
+                            <p class="quantity">Quantity: <span>2</span></p>
+                        </div>
+                        <div class="cart-game-price">
+                            <p>Price: <span>189.00</span></p>
+                        </div>
+                        <button class="remove-btn">remove</button>
+                    </div>
+                </div>*/
+
+
+@media (min-width: 640px) { body {font-size:1rem;} }
+@media (min-width:960px) { body {font-size:1.1rem;} }
+@media (min-width:1100px) { body {font-size:1.2rem;} }

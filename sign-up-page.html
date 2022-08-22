@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./CSS/sign-up.css">
+    <link rel="stylesheet" media="screen and (max-width: 650px)" href="./CSS/sign-up-smallscreen.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Bitsey Studio</title>
+</head>
+<body>
+    <div id="sign-up-form-container" class="sign-up-form-container center">
+        <div class="title">
+            <div style="width: 85%; margin:auto;">
+                <h1>Bitsey Account <br> Sign Up</h1>
+                <p>Sign up now and enjoy exclusive deal at our online store</p>
+            </div>
+        </div>
+        <div style="width: 85%; margin:auto; padding-top: 5%; padding-bottom: 5%;">
+            <form id="signUpForm" name="signUpForm" action="./server/save-user-data.php" method="post">
+
+                <!--Personal information form-->
+                <div id="personal-information-container">
+                    <h2>Personal Information</h2>
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="name" class="text-box"><br>
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" class="text-box"><br>
+                    <label for="password">Create Password</label><br>
+                    <input type="text" name="password" class="text-box"><br>
+        
+                    <label for="contact">Contact</label><br>
+                    <input type="text" name="contact" class="text-box"><br>
+                    <br>
+                    <div id="showAddressContainer" class="btn">Next</div>
+                </div>
+
+                <!--Address information form-->
+                <div id="address-information">
+                    <h2>Address Information</h2>
+                    <label for="line1">Line 1</label><br>
+                    <input  name="line1" class="text-box"></input><br>
+
+                    <label for="line2">Line 2</label><br>
+                    <input  name="line2" class="text-box"></input><br>
+
+                    <label for="city">City</label><br>
+                    <input  name="city" class="text-box"></input><br>
+
+                    <label for="state">State</label><br>
+                    <input  name="state" class="text-box"></input><br>
+
+                    <label for="postcode">Postcode</label><br>
+                    <input  name="postcode" class="text-box"></input><br>
+
+                    <label for="country">Country</label><br>
+                    <input  name="country" class="text-box"></input><br>
+                    <br>
+                    <div class="btn-container" style="display: flex; justify-content: space-between;">
+                        <div id="showPersonalContainer" class="btn">Back</div>
+                        <div id="showPaymentContainer" class="btn">Next</div>
+                    </div>
+                </div>
+
+                <!--Payment information form-->
+                <div id="payment-information">
+                    <h2>Payment Information</h2>
+                    <p>Debit & Credit Card Information</p>
+                    <label for="card-holder-name">Card Holder Name</label><br>
+                    <input  name="cardHolderName" class="text-box"></input><br>
+                    <br>
+                    <label for="card-number">Card Number</label><br>
+                    <input  name="cardNumber" class="text-box"></input><br>
+                    <br>
+                    <label for="expire-date">Expire date</label><br>
+                    <input  name="expireDate" class="text-box" placeholder="mm/yyyy"></input><br>
+                    <br>
+                    <label for="cvv">CVV</label><br>
+                    <input  name="cvv" class="text-box"></input><br>
+                    <br>
+                    <div class="btn-container" style="display: flex; justify-content: space-between;">
+                        <div id="backToAddressContainer" class="btn">Back</div>
+                        <div id="submit-btn" class="btn green">Submit</div>
+                    </div>
+
+                    <!--Paybtn
+                    <button class="btn button" type="submit">Pay</button>
+
+
+                    -->
+                </div>
+            </form>
+            <br>
+            <div class="navigate"><a href="./server/sign-in-page.php">Existing user? Sign in to Bitsey now!</a></div>
+        </div>
+    </div>
+
+    <div id="modal-box-container" class="modal-box-container">
+        <h2 style="color: rgb(245, 15, 15);">Warning!</h2>
+        <p>Please make sure your details are correct before proceeding.</p>
+        <div class="btn-container">
+            <div id="backToPaymentContainer" class="btn danger">Back</div>
+            <button class="btn confirm" onclick="submitForm()">Register</button>
+        </div>
+    </div>
+</body>
+
+<script src="./Javascript/validations.js"></script>
+
+</html>
+

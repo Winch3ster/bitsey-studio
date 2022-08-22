@@ -1,0 +1,231 @@
+.mario-smallscreen{
+    display: none;
+}
+.join-us-page-title{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url(../Images/Join-us-wallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.join-us-page-title img{
+    width: 41%;
+    height: auto;
+}
+
+.life-at-bitsey-container{
+    width: 100%;
+    height: fit-content;
+}
+.life-at-bitsey-title{
+    position: relative;
+    margin-top: 2%;
+    width: 40%;
+    height: fit-content;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    background-color: rgb(3, 139, 165);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.life-at-bitsey-content-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.life-at-bitsey-content{
+    width: 75%;
+}
+.life-at-bitsey-content-picture{
+    width: 25%;
+}
+.life-at-bitsey-content-picture img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.our-department-container{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 5%;
+}
+.our-department-title-container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+.our-department-title-container h1{
+    width: 100%;
+    color: rgb(3, 139, 165);
+    text-align: center;
+}
+.our-department-title-container hr{
+    width: 20%;
+    height: 4px;
+    background-color: rgb(3, 139, 165);
+}
+.our-department-title-container p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.our-department-content-row{
+    width: 95%;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.department-block{
+    width: 40%;
+    height: fit-content;
+    margin: auto;
+    transition: 0.4s;
+    background-color: white;
+    padding: 1%;
+}
+
+
+.department-block:hover{
+    box-shadow: 0px 10px 8px #888888;
+    -webkit-box-shadow: 0px 10px 8px #888888;
+    -moz-box-shadow: 0px 10px 8px #888888;
+    z-index: 4;
+    transform: scale(1.1);
+
+}
+.department-block img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.department-block h2{
+    color: rgb(3, 139, 165);
+    margin: 0;
+}
+.department-block p{
+    width: 95%;
+}
+
+.open-position-container{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    background-image: url(../Images/open-position.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.open-position-smallscreen-title-image{
+    display: none;
+}
+.open-position-content-container{
+    position: relative;
+    height: fit-content;
+    width: 85%;
+    background-color: white;
+    margin: auto;
+    padding-bottom: 3%;
+}
+.open-position-title-container{
+    width: 40%;
+    padding: 0.5%;
+    margin-top: 1%;
+    background-color: rgb(3, 139, 165);
+    color: white;
+}
+.open-position-title-container h1{
+    width: 100%;
+    text-align: center;
+}
+.open-position-paragraph{
+    width: 95%;
+    margin: auto;
+}
+.open-position-paragraph h2{
+    width: 100%;
+    color: rgba(23, 23, 23, 0.7);
+}
+.OP-smallscreen-instruction{display:none}
+.open-position-table{
+    width: 95%;
+    margin: auto;
+    overflow-x:auto;
+    overflow-y: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even){background-color: #f2f2f2}
+
+
+
+.students-fresh-graduates-container{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    padding: 3% 0 3% 0;
+    display: flex;
+    align-items: center;
+}
+.student-fresh-graduates-img{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.student-fresh-graduates-img img{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    max-width: 250px;
+}
+.student-fresh-graduates-content{width: 60%;}
+
+.student-fresh-graduates-content h1{color: rgba(23, 23, 23, 0.7);}
+
+.apply-btn-container{
+    display: block;
+}
+.apply-btn{
+    background-color: rgb(3, 139, 165);
+    border: 2px solid rgb(3, 139, 165);
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.apply-btn:hover{
+    background-color: white;
+    color: rgb(3, 139, 165);
+    border: 2px solid rgb(3, 139, 165);
+}
+
+.apply-btn-container.middle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
