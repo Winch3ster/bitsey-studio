@@ -12,6 +12,7 @@
 </head>
 <body>
 <?php
+    echo "This is from receive payment .php!";
     //Due to time and knowledge constraint I could not implement further data manipulation on the purchased item(s)
     //Hence, once user click on purchase the his/her cart will be emptied
     include_once("./database-connection.php");
@@ -25,18 +26,18 @@
     $copyAndInsertQuery = "INSERT INTO purchased_items (game_name, img_link, platform, quantity, price, user_id) SELECT ( game_name, img_link, platform, quantity, price, user_id) FROM cart WHERE user_id='$user'";
     
     if ($conn->query($copyAndInsertQuery) === TRUE) {
-        echo "copied successfully";
+        echo "<div>copied successfully</div>";
     } else {
-        echo "Error: " . $insertQuery . "<br>" . $conn->error;
+        echo "<div> Error: " . $copyAndInsertQuery . "<br>" . $conn->error . "</div>";
     }
 
     
     //Delete item(s) from cart 
     $deleteQuery = " DELETE * FROM cart WHERE user_id='$user'";
     if ($conn->query($deleteQuery) === TRUE) {
-        echo "Query executed successfully";
+        echo "<div>Query executed successfully</div>";
     } else {
-        echo "Error: " . $insertQuery . "<br>" . $conn->error;
+        echo "<div>Error: " . $deleteQuery . "<br>" . $conn->error ."</div>";
     }
 
 ?>
