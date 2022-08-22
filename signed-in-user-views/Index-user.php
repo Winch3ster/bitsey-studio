@@ -16,7 +16,7 @@
         <div class="Bitsey">Bitsey Studio | Where virtual worlds thrive &copy;</div>
     </div>
     <header class="header-container">
-        <div class="company-logo"><a href="./Index-user.php"><img src="../Images/Bitsey2.png" alt="">BITSEY</a></div>
+        <div class="company-logo"><a href="./index-user.php"><img src="../Images/Bitsey2.png" alt="">BITSEY</a></div>
 
         <!--Navigation menu code starts-->
         <div id='navigation-container' class="navigation-container">

@@ -19,7 +19,7 @@
 <body>
     <!--Header-->
     <header class="header header-webpage-smallscreen">
-        <div class="company-logo"><a href="./Index-user.php"><img src="../Images/Bitsey2.png" alt="">BITSEY</a></div>
+        <div class="company-logo"><a href="./index-user.php"><img src="../Images/Bitsey2.png" alt="">BITSEY</a></div>
         
         <div id='navigation-container' class="navigation-container">
             <div class="close-btn"><img  onclick='closeNavigationMenu()'id='close-btn'src="../Images/icons8-close-50.png" alt=""></div>
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="cart-container"> <a href="../server/cart.php"><img src="../Images/shopping-cart (1).png" alt=""></a></div>
         <div class="drop-down">
             <img id="drop-down" src="../Images/dropdownmenu.png" alt="">
