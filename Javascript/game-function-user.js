@@ -48,16 +48,17 @@ function sendJSON(){
     var gameName = document.getElementById('game-name').innerText;
     var price = document.getElementById('price').innerText;
     var gameImageLink = document.getElementById('game-image').src;
+
     console.log(gameImageLink);
 
     console.log(gameName)
     //escape single quote in the game's name
     if (gameName == "No Man's Sky"){
         console.log('check already');
-        gameName = "No Man\'s Sky";
+        gameName = "No Man\\'s Sky";
     }
     if (gameName == "Tom Clancy's Rainbow Six Siege"){
-        gameName = "Tom Clancy\'s Rainbow Six Siege";
+        gameName = "Tom Clancy\\'s Rainbow Six Siege";
     }
 
     var xhr = new XMLHttpRequest();
