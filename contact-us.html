@@ -73,4 +73,5 @@
     </footer>
 
 </body>
+<script src="../Javascript/webpage.js"></script>
 </html>

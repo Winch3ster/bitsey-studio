@@ -30,6 +30,7 @@
         <div id='navigation-container' class="navigation-container">
             <div class="close-btn"><img  onclick='closeNavigationMenu()'id='close-btn'src="../Images/icons8-close-50.png" alt=""></div>
 
+            <div class="navigation-block-webpage"><a href="./Index-user.php">Home</a></div>
             <div class="navigation-block-webpage"><a href="#all-games-section">Games</a></div>
             <div class="navigation-block-webpage"><a href="#sales-section">Deals</a></div>
             <div class="navigation-block-webpage last-item"><a href="./contact-us-user.php">Support</a></div>
@@ -237,10 +238,10 @@
 
     <div id="sales-section">
             <div class="sales-title-container">
-                <h1>Exclusive Mid-Year Sales </h1>
+                <h1>Exclusive Merdeka Sales </h1>
                 <hr style="width: 15%; height: 4px; background-color: rgb(3, 139, 165);">
                 <p>
-                    Our annual Mid-Year sales in here! Purchase your favorite and title winning games
+                    Our annual Merdeka sales is here! Purchase your favorite and title winning games
                      and save up to 70% now at Bitsey!
                 </p>
             </div>

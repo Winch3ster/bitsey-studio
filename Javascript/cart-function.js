@@ -19,5 +19,14 @@ function showPurchaseHistory(){
 }
 
 function checkout(){
-    window.open("../server/receive-payment.php");
+    var cartList = document.getElementById('cart-list');
+
+    if (cartList.hasChildNodes() === true){
+        window.open("../server/receive-payment.php");
+    } else {
+        //display error
+        alert("Error: Cannot checkout. YOur cart has no item!");
+    }
+
+
 }

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!--Since the structure of sign in and sign up page is the same, hence, sign in page elements will implement the same classes name to reduce CSS code repetition -->
     <link rel="stylesheet" href="../CSS/sign-up.css">
     <link rel="stylesheet" media="screen and (max-width: 650px)" href="../CSS/sign-up-smallscreen.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>

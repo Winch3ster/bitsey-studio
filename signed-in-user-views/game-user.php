@@ -145,7 +145,7 @@
 
 <script src="../Javascript/game-mapper-user.js"></script>
 <script src="../Javascript/game-function-user.js"></script>
-
+<script src="../Javascript/webpage.js"></script>
 
 
 

@@ -80,6 +80,9 @@
     width: 85%;
     margin: auto;
 }
+.sales-title-containe p{
+    width: 85%;
+}
 .four-column-container{
     position: relative;
     width: 95%;

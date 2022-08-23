@@ -175,7 +175,7 @@
                 <h1>Discover our games</h1>
                 <div class="small-screen-content">
                     <p>Visit our store to discover more games!</p>
-                    <button><span>Discover</span></button>
+                    <button onclick="goToStore()"><span>Discover</span></button>
                 </div>
                 <img src="Images/right-arrow.png" alt="">
             </div>
@@ -257,7 +257,7 @@
 
 </body>
 
-
+<script src="../Javascript/webpage.js"></script>
 <script>
     var smallNavigationMenuIsDisplaying = false; //check if small-screen navigation menu is displaying
     var dropDownMenu = document.getElementById('drop-down');
@@ -298,6 +298,9 @@
         smallNavigationMenuIsDisplaying = false;
     }
 
+    function goToStore(){
+        window.open("./store.html", "_self");
+    }
 
 </script>
 

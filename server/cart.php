@@ -42,7 +42,7 @@
         <?php
             echo '
             <div id="shopping-cart-container">
-                <li class="cart-list">';
+                <li id="cart-list" class="cart-list">';
 
             
                     include_once("./database-connection.php");
@@ -183,6 +183,7 @@
 </body>
 
 <script src="../Javascript/cart-function.js"></script>
+<script src="../Javascript/webpage.js"></script>
 <script>
 
     function removeSelectedGame( gameName, platform){
