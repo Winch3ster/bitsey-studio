@@ -57,7 +57,7 @@ function sendJSON(){
     //escape single quote in the game's name
     if (gameName == "No Man's Sky"){
         console.log("This is no man sky");
-        var data = '{ "gameName": "No Man' + "\'s" + ' Sky", "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price }';
+        var data = '{ "gameName": "No Man' + "\\" +"\'s" + ' Sky", "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price }';
     } else if (gameName == "Tom Clancy's Rainbow Six Siege"){
         console.log("This is r6");
         var data = '{ "gameName": "Tom Clancy\'s Rainbow Six Siege", "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price }';
