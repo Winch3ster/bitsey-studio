@@ -17,7 +17,6 @@ function showSlideAutomatically(){
     //Deals with the dots
     for (i = 0; i < images.length; i++){
         dots[i].className = dots[i].className.replace( ' active', '');
-        console.log('yep running')
     }
 
     //make image and relevant dot visible
@@ -26,5 +25,4 @@ function showSlideAutomatically(){
     
     imageIndex ++;
     setTimeout(showSlideAutomatically, 6000);
-
 }
