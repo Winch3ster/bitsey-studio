@@ -21,7 +21,7 @@ function showPurchaseHistory(){
 function checkout(){
     var cartList = document.getElementById('cart-list');
 
-    if (cartList.hasChildNodes() === true){
+    if (cartList.querySelector('.cart-game-block') !== null){
         window.open("../server/receive-payment.php");
     } else {
         //display error
