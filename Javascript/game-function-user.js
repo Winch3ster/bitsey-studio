@@ -66,9 +66,9 @@ function sendJSON(){
     }
 
     xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
-    xhr.send(data); 
+    //xhr.send(data); 
 
-
+    xhr.send(JSON.stringify(data)); 
 
     // Converting JSON data to string
 
