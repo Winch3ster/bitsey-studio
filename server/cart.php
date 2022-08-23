@@ -185,6 +185,7 @@
 <script src="../Javascript/cart-function.js"></script>
 <script src="../Javascript/webpage.js"></script>
 <script>
+    updateSubtotal();
 
     function removeSelectedGame( gameName, platform){
         let item = document.getElementById(`${gameName}${platform}`);
@@ -202,69 +203,22 @@
     }
 
     function updateSubtotal(){
-        var prices = document.querySelectorAll('.game-price');
-        var subtotalSpan = document.getElementById('subtotal');
-        var subtotal =0;
-        for (i =0; i<prices.length; i++){
-            subtotal += parseFloat(prices[i].innerHTML);
-        }
 
-        subtotalSpan.innerText = subtotal.toFixed(2);
-        console.log("Subtotal now: " +subtotal);
+        var cartList = document.getElementById('cart-list');
+
+        if (cartList.querySelector('.cart-game-block') !== null){
+            var prices = document.querySelectorAll('.game-price');
+            var subtotalSpan = document.getElementById('subtotal');
+            var subtotal =0;
+            for (i =0; i<prices.length; i++){
+                subtotal += parseFloat(prices[i].innerHTML);
+            }
+
+            subtotalSpan.innerText = subtotal.toFixed(2);
+            console.log("Subtotal now: " +subtotal);
+        } 
     }
 
-
-
-
-/*<div id="purchase-history-container">
-            
-            <div id="shopping-cart-container">
-                <li class="cart-list">
-          
-                $getPurchaseHistory = "SELECT game_name, img_link, platform, quantity, price FROM purchased_items WHERE user_id='$user'";
-                $result = $conn->query($getPurchaseHistory);
-                if ($result->num_rows > 0) {
-                    // output data of each row
-                    while($row = $result->fetch_assoc()) {
-                        echo '
-                            <div id="'.$row["game_name"].$row["platform"].'" class="cart-game-block">
-                                <div class="cart-game-img-container"><img src="'.$row["img_link"].' " alt=""></div>
-                                <div class="cart-block-content">
-                                    <div class="cart-game-description">
-                                        <p>'. $row["game_name"].'</p>';
-
-                                        //Decide which label to render in the cart for each label (ps4, ps5 or pc) different design will be used
-                                        if ($row["platform"] == "ps4") {
-                                            echo '<div class="label ps-4">PS4</div>';
-                                        } elseif ($row["platform"] == "ps5") {
-                                            echo '<div class="label ps-5">PS5</div>';
-                                        } else{
-                                            echo '<div class="label pc">PC</div>';
-                                        }
-
-
-                            echo            '<p class="quantity">Quantity: <span>'. $row["quantity"] . '</span></p>
-                                    </div>
-                                    <div class="cart-game-price">
-                                        <p>Price: <span class="game-price">'. $row["price"]*$row["quantity"]. '</span></p>
-                                    </div>
-                                </div>        
-                            </div>   
-                        ';
-
-                    }
-                } else {
-                    echo "No purchase history found";
-                }
-
-                $conn->close();
-          
-    
-                </li>
-            </div>
-
-
-</div> */
 </script>
 
 
