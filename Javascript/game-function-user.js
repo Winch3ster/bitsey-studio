@@ -52,10 +52,11 @@ function sendJSON(){
 
     console.log(gameName)
     //escape single quote in the game's name
-    if (gameName === "No Man's Sky"){
+    if (gameName == "No Man's Sky"){
+        console.log('check already');
         gameName = "No Man\'s Sky";
     }
-    if (gameName === "Tom Clancy's Rainbow Six Siege"){
+    if (gameName == "Tom Clancy's Rainbow Six Siege"){
         gameName = "Tom Clancy\'s Rainbow Six Siege";
     }
 
