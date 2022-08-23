@@ -25,7 +25,7 @@ function checkout(){
         window.open("../server/receive-payment.php");
     } else {
         //display error
-        alert("Error: Cannot checkout. YOur cart has no item!");
+        alert("Error: Cannot checkout. Your cart has no item! T^T");
     }
 
 
