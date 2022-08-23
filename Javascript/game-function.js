@@ -37,31 +37,14 @@ function sendJSON(){
     var price = document.getElementById('price').innerText;
     var gameImageLink = document.getElementById('game-image').src;
 
-
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "./server/get-json.php");
+    xhr.open("POST", "../server/get-json.php");
     
     xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText); } }
-
-    var data;
-    if (gameName == "No Man's sky"){
-        var data = `{ "gameName": "No Man\'s Sky", "gameImageLink": ${gameImageLink}, "platform": ${platformSelected}, "amountToBuy": ${amountToBuy}, "price": ${price}}`;
-    } else if (gameName == "Tom Clancy's Rainbow Six Siege"){
-        var data = `{ "gameName": "Tom Clancy\'s Rainbow Six Siege", "gameImageLink": ${gameImageLink}, "platform": ${platformSelected}, "amountToBuy": ${amountToBuy}, "price": ${price}}`;
-    } else{
-        var data = JSON.stringify({ "gameName": gameName.innerText, "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price });
-    }
+    var data = JSON.stringify({ "gameName": gameName.innerText, "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price });
 
     xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
     xhr.send(data); 
-
-
-
-    // Converting JSON data to string
-
-    console.log("sendJson() is running");
-    console.log("Json payload " + JSON.stringify(data));
-    // Sending data with the request
 }
 
 

@@ -52,26 +52,10 @@ function sendJSON(){
     xhr.open("POST", "../server/get-json.php");
     
     xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText); } }
-    //var data = JSON.stringify({ "gameName": gameName, "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price });
-
-    //xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
-    //xhr.send(data); 
-
-   // xhr.send(data); 
-
-    var data;
-    if (gameName == "No Man's sky"){
-        data = `{ "gameName": "No Man\'s Sky", "gameImageLink": ${gameImageLink}, "platform": ${platformSelected}, "amountToBuy": ${amountToBuy}, "price": ${price}}`;
-    } else if (gameName == "Tom Clancy's Rainbow Six Siege"){
-        data = `{ "gameName": "Tom Clancy\'s Rainbow Six Siege", "gameImageLink": ${gameImageLink}, "platform": ${platformSelected}, "amountToBuy": ${amountToBuy}, "price": ${price}}`;
-    } else{
-        data = JSON.stringify({ "gameName": gameName.innerText, "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price });
-    }
+    var data = JSON.stringify({ "gameName": gameName, "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price });
 
     xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
     xhr.send(data); 
-
-
 
 }
 
