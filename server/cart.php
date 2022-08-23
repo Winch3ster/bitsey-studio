@@ -21,7 +21,7 @@
             <div class="close-btn"><img  onclick='closeNavigationMenu()'id='close-btn'src="../Images/icons8-close-50.png" alt=""></div>
 
             <div class="navigation-block-webpage"><a href="../signed-in-user-views/store-user-signed-in.php">Games</a></div>
-            <div class="navigation-block-webpage"><a href="../signed-in-user-views/store-user-signed-in.php/#sales-section">Deals</a></div>
+            <div class="navigation-block-webpage"><a href="../signed-in-user-views/store-user-signed-in.php#sales-section">Deals</a></div>
             <div class="navigation-block-webpage last-item"><a href="../signed-in-user-views/contact-us-user.php">Support</a></div>
         </div>
         
