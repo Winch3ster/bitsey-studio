@@ -61,11 +61,11 @@ function sendJSON(){
 
     var data;
     if (gameName == "No Man's sky"){
-        var data = `{ "gameName": "No Man\'s Sky", "gameImageLink": ${gameImageLink}, "platform": ${platformSelected}, "amountToBuy": ${amountToBuy}, "price": ${price}}`;
+        data = `{ "gameName": "No Man\'s Sky", "gameImageLink": ${gameImageLink}, "platform": ${platformSelected}, "amountToBuy": ${amountToBuy}, "price": ${price}}`;
     } else if (gameName == "Tom Clancy's Rainbow Six Siege"){
-        var data = `{ "gameName": "Tom Clancy\'s Rainbow Six Siege", "gameImageLink": ${gameImageLink}, "platform": ${platformSelected}, "amountToBuy": ${amountToBuy}, "price": ${price}}`;
+        data = `{ "gameName": "Tom Clancy\'s Rainbow Six Siege", "gameImageLink": ${gameImageLink}, "platform": ${platformSelected}, "amountToBuy": ${amountToBuy}, "price": ${price}}`;
     } else{
-        var data = JSON.stringify({ "gameName": gameName.innerText, "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price });
+        data = JSON.stringify({ "gameName": gameName.innerText, "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price });
     }
 
     xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
