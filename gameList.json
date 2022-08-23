@@ -49,7 +49,7 @@
         "description": "Enter the chaos of war as a bold Knight, brutal Viking, or deadly Samurai, three of the greatest legacies of warriors.",
         "pictureUrl" : "Images/Store-images/Games/for-honor.jpg",
         "availableQuantity": 5,
-        "price": 219.00
+        "price": 76.65
     },
     {
         "gameName" : "Monster Hunter World",
@@ -63,7 +63,7 @@
         "description": "Join the strong Battlefield™ community and jump into the epic battles of The Great War in this critically acclaimed first-person shooter. Hailed by critics, Battlefield 1 was awarded the Games Critics Awards Best of E3 2016: Best Action Game and gamescom Best Action Game award for 2016.",
         "pictureUrl" : "Images/Store-images/Games/bf1.jpg",
         "availableQuantity": 4,
-        "price": 159.00
+        "price": 63.60
     },
 
     {
@@ -71,7 +71,7 @@
         "description": "Welcome to Fall Guys: Free for All! You’re invited to dive and dodge your way to victory in the pantheon of clumsy. Rookie or pro? Solo or partied up? Fall Guys delivers ever-evolving, high-concentrated hilarity and fun!",
         "pictureUrl" : "Images/Store-images/Games/fall-guys.jpg",
         "availableQuantity": 9,
-        "price": 170.90
+        "price": 110.90
     },
     
     {
@@ -79,7 +79,7 @@
         "description": "Set in modern day rural America and taking place after the dramatic events of Resident Evil® 6, players experience the terror directly from the first person perspective. Resident Evil 7 embodies the series’ signature gameplay elements of exploration and tense atmosphere that first coined “survival horror” some twenty years ago; meanwhile, a complete refresh of gameplay systems simultaneously propels the survival horror experience to the next level.",
         "pictureUrl" : "Images/Store-images/Games/resident-evil-biohazard.jpg",
         "availableQuantity": 10,
-        "price": 69.00
+        "price": 20.7
     },
     
     {
@@ -108,7 +108,7 @@
     
     {
         "gameName" : "Tom Clancy's Rainbow Six Siege",
-        "description": "Master the art of destruction and gadgetry in Tom Clancy’s Rainbow Six Siege. Face intense close quarters combat, high lethality, tactical decision making, team play and explosive action within every moment. Experience a new era of fierce firefights and expert strategy born from the rich legacy of past Tom Clancy's Rainbow Six games.",
+        "description": "Master the art of destruction and gadgetry in Tom Clancy's Rainbow Six Siege. Face intense close quarters combat, high lethality, tactical decision making, team play and explosive action within every moment. Experience a new era of fierce firefights and expert strategy born from the rich legacy of past Tom Clancy's Rainbow Six games.",
         "pictureUrl" : "Images/Store-images/Games/r6-siege.jpg",
         "availableQuantity": 10,
         "price": 65.00
