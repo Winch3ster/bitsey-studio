@@ -21,12 +21,6 @@ function addItemToCart(){
         alert("Error: Please select a platform to continue.");
     }else{
         var gameName = document.getElementById('game-name').innerText;
-
-
-        console.log("Added " + gameName + " to your cart");
-        console.log("Platform selected: " + platformSelected);
-        console.log("Quantity added: " + amountToBuy);
-
         sendJSON();
         openDialog();
     }

@@ -223,7 +223,7 @@
 <script src="../Javascript/webpage.js"></script>
 <script>
     function navigateToContactUsPage(){
-        window.open('./contact-us-user.php');
+        window.open('./contact-us-user.php', "_self");
     }
 </script>
 

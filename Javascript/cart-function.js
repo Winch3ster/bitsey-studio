@@ -22,7 +22,7 @@ function checkout(){
     var cartList = document.getElementById('cart-list');
 
     if (cartList.querySelector('.cart-game-block') !== null){
-        window.open("../server/receive-payment.php");
+        window.open("../server/receive-payment.php", "_self");
     } else {
         //display error
         alert("Error: Cannot checkout. Your cart has no item! T^T");
