@@ -47,8 +47,8 @@
 
 
 
-    <!--Advertisement slideshow starts-->
-    <div class="advertisement-container">
+    <!--slideshow starts-->
+    <div class="slide-show-container">
 
 
 
@@ -66,10 +66,10 @@
             <img src="../Images/kirby.jpg">
         </div>
 
-        <!-- Next and last advertisement buttons -->
+        <!-- Next and last buttons -->
         <a class="last-btn" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next-btn" onclick="plusSlides(1)">&#10095;</a>
-        
+
         <div class="dot-container" style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -79,7 +79,7 @@
     </div>
 
 
-    <!--Advertisement slideshow ends-->
+    <!--slideshow ends-->
 
 
 

@@ -135,7 +135,7 @@ body{
 
 /*Advertisement slide show */
 
-.advertisement-container{
+.slide-show-container{
     position: relative;
     width: 100%;
     height: 50%;
@@ -145,14 +145,14 @@ body{
 
 }
 
-.advertisement-container .img{
+.slide-show-container .img{
     position: relative;
     display: none;
     width: 100%;
     height: 100%;
     transition: all 2s linear;
 }
-.advertisement-container img{
+.slide-show-container img{
     width: 100%;
     height: 700px;
 }
