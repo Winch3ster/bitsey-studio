@@ -10,7 +10,7 @@ var gameImage = document.getElementById('game-image');
 var errorMessage = document.getElementById('error-message');
 var price = document.getElementById('price');
 var pageTitle = document.getElementById('page-title');
-console.log("game mapper running");
+
 fetch("../gameList.json")
 .then(response => {
     return response.json();

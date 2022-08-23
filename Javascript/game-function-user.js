@@ -40,7 +40,6 @@ function openDialog(){
 
 function closeDialog(){
     var dialogBox = document.getElementById('modal-box-section');
-    console.log("Closed dialog");
     dialogBox.style.display = 'none';
     window.open('../signed-in-user-views/store-user-signed-in.php',"_self");
 }
@@ -53,28 +52,13 @@ function sendJSON(){
     xhr.open("POST", "../server/get-json.php");
     
     xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText); } }
-
-    //escape single quote in the game's name
-    if (gameName == "No Man`s Sky"){
-        console.log("This is no man sky");
-        var data = '{ "gameName": "No Man' + "\\" +"\'s" + ' Sky", "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price }';
-    } else if (gameName == "Tom Clancy's Rainbow Six Siege"){
-        console.log("This is r6");
-        var data = '{ "gameName": "Tom Clancy\'s Rainbow Six Siege", "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price }';
-    } else{
-        var data = JSON.stringify({ "gameName": gameName, "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price });
-    }
+    var data = JSON.stringify({ "gameName": gameName, "gameImageLink": gameImageLink, "platform": platformSelected, "amountToBuy": amountToBuy, "price": price });
 
     xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
     //xhr.send(data); 
 
     xhr.send(data); 
 
-    // Converting JSON data to string
-
-    console.log("Json payload " + JSON.stringify(data));
-    console.log("Json payload not string " + data);
-    // Sending data with the request
 }
 
 

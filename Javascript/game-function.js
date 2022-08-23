@@ -28,7 +28,7 @@ function openDialog(){
 
 function closeDialog(){
     var dialogBox = document.getElementById('modal-box-section');
-    console.log("Closed dialog");
+
     dialogBox.style.display = 'none';
     window.open('../signed-in-user-views/store-user-signed-in.php',"_self");
 }
@@ -36,7 +36,7 @@ function sendJSON(){
     var gameName = document.getElementById('game-name');
     var price = document.getElementById('price').innerText;
     var gameImageLink = document.getElementById('game-image').src;
-    console.log(gameImageLink);
+
 
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "./server/get-json.php");

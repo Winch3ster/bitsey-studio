@@ -8,7 +8,6 @@ let nav = document.getElementById('navigation-container');
 //display appriopriate navigation menu when screen is resized
 window.addEventListener('resize', ()=>{
     let windowSize = window.innerWidth;
-    console.log(windowSize);
 
 
     if(windowSize <= 650){
