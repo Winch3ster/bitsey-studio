@@ -66,10 +66,10 @@
             <img src="../Images/kirby.jpg">
         </div>
 
-        <div class="img fade-in">
-            <img src="../Images/Store-images/horizon-forbidden-west.png">
-        </div>
-
+        <!-- Next and last advertisement buttons -->
+        <a class="last-btn" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next-btn" onclick="plusSlides(1)">&#10095;</a>
+        
         <div class="dot-container" style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>

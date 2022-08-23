@@ -1,28 +1,35 @@
-//automatic show slide
+//Taken from https://stackoverflow.com/questions/40638969/automatic-and-manual-slideshow 
+//automatic + manual slide show
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
 
-let imageIndex = 0;
-showSlideAutomatically();
-function showSlideAutomatically(){
-    var i;
-    var images = document.getElementsByClassName('img');
-    let dots = document.getElementsByClassName('dot');
-    if (imageIndex >= images.length) { imageIndex = 0};
-    console.log(imageIndex)
-
-    //make image invisible
-    for (i = 0; i < images.length; i++){
-        images[i].style.display = 'none';
-    }
-
-    //Deals with the dots
-    for (i = 0; i < images.length; i++){
-        dots[i].className = dots[i].className.replace( ' active', '');
-    }
-
-    //make image and relevant dot visible
-    images[imageIndex].style.display = "block";
-    dots[imageIndex].className += " active";
-    
-    imageIndex ++;
-    setTimeout(showSlideAutomatically, 6000);
+function plusSlides(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex += n);
 }
+
+function currentSlide(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("img");
+  var dots = document.getElementsByClassName("dot");
+
+  if (n==undefined){n = ++slideIndex}
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+  timer = setTimeout(showSlides, 6000); //change slide every 6 seconds
+} 
