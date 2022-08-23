@@ -50,6 +50,7 @@ function sendJSON(){
     var gameImageLink = document.getElementById('game-image').src;
     console.log(gameImageLink);
 
+    console.log(gameName)
     //escape single quote in the game's name
     if (gameName === "No Man's Sky"){
         gameName = "No Man\'s Sky";
