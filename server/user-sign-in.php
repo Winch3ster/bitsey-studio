@@ -25,18 +25,21 @@
     if($result->num_rows > 0){
 
         //query for the user_id from the database
-        $userId = $conn->query("SELECT user_id, email FROM `customer_details` WHERE email='$email' AND user_password='$password'");
+        $userId = $conn->query("SELECT user_id, full_name, email FROM `customer_details` WHERE email='$email' AND user_password='$password'");
 
         //Read the returned result and save it in a variable called $user
         $user;
+        $userName;
         $userEmail;
         while($row = $userId->fetch_assoc()) {
             $user= $row["user_id"];
+            $userName = $row["full_name"];
             $userEmail = $row["email"];
         }
         
         session_start();//start a session and set user_id to the acquired user id.
         $_SESSION["user_id"] = $user;
+        $_SESSION["full_name"] = $userName;
         $_SESSION["user_email"] = $userEmail;
 
    

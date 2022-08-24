@@ -74,20 +74,23 @@
         </div>
         <div class="our-department-content-row">
             <div class="department-block">
-                <img src="../Images/Design.jpg" alt="">
+                <img src="../Images/design.jpg" alt="">
                 <h2>Concept / Design</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Cras convallis purus lacinia, dignissim elit et, blandit neque. Nam rhoncus id nibh id interdum. 
-                    Pellentesque ac turpis eu justo scelerisque ullamcorper eu quis tellus. 
+                <p>Think of your favourite fantastical movie or video game—one that features remarkably realistic alien planets, 
+                    futuristic vehicles, or unique creatures and characters. 
+                    Have you ever wondered who imagines and creates those elements? 
+                    That’s the job of a concept artist. Concept art is the overall artistic vision for a project and our studio is filled with these people.
                 </p>
             </div>
 
             <div class="department-block">
                 <img src="../Images/testing.jpg" alt="">
                 <h2>Game Test</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Cras convallis purus lacinia, dignissim elit et, blandit neque. Nam rhoncus id nibh id interdum. 
-                    Pellentesque ac turpis eu justo scelerisque ullamcorper eu quis tellus. 
+                <p>
+                    If you have been a programmer, you would know how annoying those bugs can be even though you have just checked your code. 
+                    Ever wonder how modern games can be so fascinating? 
+                    With tons of processes, characters running around and you can do whatever you want without crashing the entire game. 
+                    This is the responsibility of game testers; we hunt bugs and resolve them to give you the smoothest gaming experiences.
                 </p>
             </div>
         </div>
@@ -96,18 +99,21 @@
             <div class="department-block">
                 <img src="../Images/development.jpg" alt="">
                 <h2>Development</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Cras convallis purus lacinia, dignissim elit et, blandit neque. Nam rhoncus id nibh id interdum. 
-                    Pellentesque ac turpis eu justo scelerisque ullamcorper eu quis tellus. 
+                <p>
+                    A game developer could be a programmer, a sound designer, an artist, a designer or many other roles available in the industry. 
+                    But what makes developers in Bitsey Studio different from the rest is that we are gamers too. 
+                    We share the same dream to push the boundaries of gaming to places where our imaginations bring us.
                 </p>
             </div>
 
             <div class="department-block">
                 <img src="../Images/Modelling.jpg" alt="">
                 <h2>Modelling</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Cras convallis purus lacinia, dignissim elit et, blandit neque. Nam rhoncus id nibh id interdum. 
-                    Pellentesque ac turpis eu justo scelerisque ullamcorper eu quis tellus. 
+                <p>
+                    Do you ever have the experience where footage from a game looks so real you thought it's real? 
+                    With cutting-edge technology like Unreal Engine 5, 
+                    gaming graphic has reached a level of realism that people from 20 years ago can only dream of. 
+                    Behind these graphics are artists who work round the clock to make it a possibility. 
                 </p>
             </div>
 

@@ -21,6 +21,7 @@
         session_start();
 
         $user = $_SESSION["user_id"];
+        $userName = $_SESSION["full_name"]
         $userEmail = $_SESSION["user_email"];
     ?>
 
@@ -52,7 +53,7 @@
         </div>
     </header>
 
-    <div class="welcome-user-container">Welcome, <span style="color: rgb(3, 139, 165);"> <?php echo $userEmail?> </span>! Enjoy exclusive deals at Bitsey only.</div>
+    <div class="welcome-user-container">Welcome, <span style="color: rgb(3, 139, 165);"> <?php echo $userName?> </span>! Enjoy exclusive deals at Bitsey only.</div>
 
     <!--Bottom navigation bar for small screen only-->
     <div class="bottom-navigation">
