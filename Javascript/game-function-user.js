@@ -1,4 +1,4 @@
-console.log('This is from the game function js');
+//This file performs all the javascript function in game.html or game-user.php files
 var goBackToStoreBtn = document.getElementById('go-back-to-store-btn');
 var amountToBuy = 1;
 var quantityDisplay = document.getElementById('quantity-display');
@@ -17,6 +17,7 @@ goBackToStoreBtn.addEventListener('click', ()=>
 
 
 function addItemToCart(){
+    //Restrict users from adding game to cart if they have not selected any platform
     if ( platformSelected === null || platformSelected === ""){
         alert("Error: Please select a platform to continue.");
     }else{
@@ -27,6 +28,7 @@ function addItemToCart(){
 }
 
 function openDialog(){
+    //Shows a dialog to indicate game successfully added to cart
     var dialogBox = document.getElementById('modal-box-section');
 
     dialogBox.style.display = 'block';
@@ -35,9 +37,13 @@ function openDialog(){
 function closeDialog(){
     var dialogBox = document.getElementById('modal-box-section');
     dialogBox.style.display = 'none';
-    window.open('../signed-in-user-views/store-user-signed-in.php',"_self");
+
+    window.open('../signed-in-user-views/store-user-signed-in.php',"_self"); //Navigate back to store
 }
+
+
 function sendJSON(){
+    //Get game information from the webpage
     var gameName = document.getElementById('game-name').innerText;
     var price = document.getElementById('price').innerText;
     var gameImageLink = document.getElementById('game-image').src;
@@ -61,28 +67,31 @@ function sendJSON(){
 
 
 function increaseAmount(){
+    //If the users try to increase the quantity higher than available quantity, prompt error
     if (amountToBuy >= localStorage.getItem('quantity')){
         errorMessage.innerText = "*Selected amount exceed available quantity";
     }
     else{
         errorMessage.innerText = "";
         amountToBuy += 1;
-        quantityDisplay.innerText = amountToBuy;
+        quantityDisplay.innerText = amountToBuy; //update the number in the selected quantity field
     }
 }
 
 function decreaseAmount(){
+    //If the users try decrease the quantity to zero or less than 1, prompt error
     if (amountToBuy <= 1 ){
         errorMessage.innerText = "*Invalid input quantity";
     } else{
         errorMessage.innerText = "";
         amountToBuy -= 1;
-        quantityDisplay.innerText = amountToBuy;
+        quantityDisplay.innerText = amountToBuy;//update the number in the selected quantity field
     }
 }
 
 
 function platformSelect(platform){
+    //Set opacity of other label lower than the selected platform label
     platformSelected = platform;
     switch (platform){
         case 'ps4':

@@ -1,6 +1,7 @@
 //Json game list
 var gameToRender = localStorage.getItem("gameInvoked");
 
+//Extract data from gameList.json based on the index number
 var gameName = document.getElementById('game-name');
 var gameNameSmallScreen = document.getElementById('game-name-smallscreen');
 var tabName = document.getElementById('page-title');
@@ -17,6 +18,8 @@ fetch("../gameList.json")
 })
 .then(jsondata => {
     var gameList = jsondata;
+
+    //Render the information to the correct placeholder (tag) in the webpage
     gameName.innerText = gameList[gameToRender].gameName;   
     gameNameSmallScreen.innerText = gameList[gameToRender].gameName;
     tabName.innerText = gameList[gameToRender].gameName;
@@ -28,7 +31,7 @@ fetch("../gameList.json")
     price.innerText = gameList[gameToRender].price;
     pageTitle.innerText = gameList[gameToRender].gameName;
     localStorage.setItem("quantity", gameList[gameToRender].availableQuantity);
-    console.log("game mapper running");
+
 });
 
 

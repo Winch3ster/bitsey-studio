@@ -266,7 +266,6 @@
     //display appriopriate navigation menu when screen is resized
     window.addEventListener('resize', ()=>{
         let windowSize = window.innerWidth;
-        console.log(windowSize);
 
         if(windowSize <= 650){
             //display small screen navigation
@@ -284,7 +283,6 @@
         } else{
             //display wide screen navigation
             nav.style.display = 'flex';
-            console.log('large screen')
         }
     })
 

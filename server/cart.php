@@ -185,35 +185,39 @@
 <script src="../Javascript/cart-function.js"></script>
 <script src="../Javascript/webpage.js"></script>
 <script>
-    updateSubtotal();
+    updateSubtotal(); //update the total price in the cart
     
     function updateSubtotal(){
 
         var cartList = document.getElementById('cart-list');
 
+        //If the cart has item(s), then loop through each "cart-game-block", read its price from relevant html tag ( tag that has class="game-price")
+        //and add them to the subtotal variable
         if (cartList.querySelector('.cart-game-block') !== null){
             var prices = document.querySelectorAll('.game-price');
             var subtotalSpan = document.getElementById('subtotal');
             var subtotal =0;
+
             for (i =0; i<prices.length; i++){
                 subtotal += parseFloat(prices[i].innerHTML);
             }
 
-            subtotalSpan.innerText = subtotal.toFixed(2);
-            console.log("Subtotal now: " +subtotal);
-            console.log("Subtotal is running " );
+            subtotalSpan.innerText = subtotal.toFixed(2); //update the subtotal price
+
         } 
 
+        //If the cart has no item, set the subtotal to 0
         if (cartList.querySelector('.cart-game-block') === null){
             var subtotalSpan = document.getElementById('subtotal');
             subtotalSpan.innerText = 0;
-            console.log("removed last item in cart: " +subtotal);
-            console.log("Subtotal is running " );
         } 
     }
 
 
     function removeSelectedGame( gameName, platform){
+
+        //One way to uniquely identify a specific game is to set its id to its name+platform. 
+        //This is because there will not be another record that has the same game_name and platform that belong to the same user. 
         let item = document.getElementById(`${gameName}${platform}`);
         item.remove();
 

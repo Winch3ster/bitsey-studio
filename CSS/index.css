@@ -257,7 +257,7 @@ body{
     height: 100%;
     cursor: pointer;
     transition: 0.3s;
-padding:0;
+    padding:0;
 }
 .game-container:hover{
     transform: scale(1.1);

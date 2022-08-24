@@ -4,16 +4,19 @@ var slideIndex = 1;
 var timer = null;
 showSlides(slideIndex);
 
+//change to the next slide
 function plusSlides(n) {
   clearTimeout(timer);
   showSlides(slideIndex += n);
 }
 
+//change to previous slide
 function currentSlide(n) {
   clearTimeout(timer);
   showSlides(slideIndex = n);
 }
 
+//auto show slides
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("img");

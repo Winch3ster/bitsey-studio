@@ -31,7 +31,7 @@
     }
 
 
-    //Delete item(s) from cart 
+    //Delete item(s) from cart table
     $deleteQuery = " DELETE FROM cart WHERE user_id='$user'";
     if ($conn->query($deleteQuery) === TRUE) {
         echo "";

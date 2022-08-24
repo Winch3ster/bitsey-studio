@@ -1,4 +1,6 @@
-//Cannot add button in form, hence alternative is to use div and attach event listeners to replicate button
+//Cannot add button in form, hence an alternative is to use div and attach event listeners to replicate a button
+/*By default html any button added into the form will be an submit button even if specific onclick function is given */
+
 var showAddressContainer = document.getElementById('showAddressContainer');
 var showPersonalContainer = document.getElementById('showPersonalContainer');
 var showPaymentContainer = document.getElementById('showPaymentContainer');
@@ -17,31 +19,31 @@ var conformationContainer = document.getElementById('modal-box-container');
 //Buttons
 showAddressContainer.addEventListener('click', ()=>{
     if (nameValidations() === true && emailValidations() === true && contactValidations() === true && passwordValidations()=== true){
+        //Show next page of the sign-up form 
         personalInformation.style.display = 'none';
         addressInformation.style.display = 'block';
         paymentInformation.style.display = 'none';
-        console.log('showAddressContainer');
     } else{
         return false;
     }
 });
 
+
+// Navigate back to address page 
 backToAddressContainer.addEventListener('click', ()=>{
 
     personalInformation.style.display = 'none';
     addressInformation.style.display = 'block';
     paymentInformation.style.display = 'none';
-    console.log('showAddressContainer');
 });
 
 showPersonalContainer.addEventListener('click', ()=>{
     personalInformation.style.display = 'block';
     addressInformation.style.display = 'none';
     paymentInformation.style.display = 'none';
-    console.log('showPersonalContainer');
 });
-showPaymentContainer.addEventListener('click', ()=>{
 
+showPaymentContainer.addEventListener('click', ()=>{
     if (addressValidations() === true && postcodeValidations() === true){
         paymentInformation.style.display = 'block';
         personalInformation.style.display = 'none';
@@ -55,11 +57,12 @@ showPaymentContainer.addEventListener('click', ()=>{
 });
 
 submitBtn.addEventListener('click', ()=>{
+
+    //If all the data is valid, show confirmation container
     if(cardHolderValidation() === true && cardNumberValidation() === true && expireDateValidation() == true && cvValidation() === true ){
         conformationContainer.style.display = 'block';
-        document.getElementById('sign-up-form-container').style.opacity = '0.5';
+        document.getElementById('sign-up-form-container').style.opacity = '0.5'; //Reduce the opacity of background 
 
-        console.log("Done payment make sure all infomation if correct");
     } else{
         return false;
     }
@@ -69,8 +72,6 @@ submitBtn.addEventListener('click', ()=>{
 function submitForm(){
     //Taken from https://stackoverflow.com/questions/7020659/submit-form-using-a-button-outside-the-form-tag
     $("#signUpForm").submit();
-
-
 }
 
 
@@ -86,8 +87,9 @@ backToPaymentContainer.addEventListener('click', ()=>{
 //validations code
 function nameValidations(){
     var name = document.forms["signUpForm"]["name"].value;
-    var englishChar = /^[A-Za-z/\s/g]+$/;
+    var englishChar = /^[A-Za-z/\s/g]+$/; //regular expression for all characters only
 
+    // If name follows the regular expression, field is not empty and name has more than 5 characters the return true
     if (name.match(englishChar) && name != "" && name.length >= 5 ) {
         return true;
     }else{
@@ -99,7 +101,7 @@ function nameValidations(){
 
 function contactValidations(){
     var contact = document.forms["signUpForm"]["contact"].value;
-    var numbersAndSymbol = /^[-+]?[0-9]+$/;
+    var numbersAndSymbol = /^[-+]?[0-9]+$/;//regular expression for numbers and symbols only
 
     if (contact.match(numbersAndSymbol) && contact != "") {
         return true;
@@ -112,7 +114,7 @@ function contactValidations(){
 
 function emailValidations(){
     var email = document.forms["signUpForm"]["email"].value;
-    var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //regular expression for email which requires @ symbol in the input.
 
     if (email.match(emailformat) && email != "") {
         return true;
@@ -127,8 +129,8 @@ function emailValidations(){
 function passwordValidations(){
     var password = document.forms["signUpForm"]["password"].value;
 
-    console.log(password)
-    if (password != "" || password.length >= 5) {
+    //If password field is not empty or more than 5 characters
+    if (password != "" && password.length >= 5) {
         return true;
     }else{
         alert("Error: Do not leave the password field empty or make sure your password is more than 5 characters.");
@@ -139,7 +141,7 @@ function passwordValidations(){
 
 function postcodeValidations(){
     var postcode = document.forms["signUpForm"]["postcode"].value;
-    var allNumbers = /^[0-9]+$/;
+    var allNumbers = /^[0-9]+$/; //Regular expressions for all numbers only
     if (postcode.match(allNumbers) && postcode >= 10) {
         return true;
     }else{
@@ -150,7 +152,6 @@ function postcodeValidations(){
 
 //only check if the field is empty
 function addressValidations(){
-    console.log("'runnignaddress validation")
     var addressL1 = document.forms["signUpForm"]["line1"].value;
     var addressL2 = document.forms["signUpForm"]["line2"].value;
     var city = document.forms["signUpForm"]["city"].value;
@@ -199,6 +200,7 @@ function cardHolderValidation(){
 function cardNumberValidation(){
     var cardNumber = document.forms["signUpForm"]["cardNumber"].value;
     var allNumbers = /^[0-9]+$/;
+    //Length of the card number must be 16 digits as the standard for all card number
     if (cardNumber.match(allNumbers) && cardNumber.length === 16) {
         return true;
     }else{
@@ -221,6 +223,8 @@ function expireDateValidation(){
 function cvValidation(){
     var cvv = document.forms["signUpForm"]["cvv"].value;
     var allNumbers = /^[0-9]+$/;
+
+    //All credit card's cvv must contains exactly 3 numbers
     if (cvv.match(allNumbers) && cvv.length === 3) {
         return true;
     }else{
@@ -228,52 +232,3 @@ function cvValidation(){
         return false;
     }
 }
-
-
-/*
-//Cannot add button in form, hence alternative is to use div and attach event listeners to replicate button
-    var showAddressContainer = document.getElementById('showAddressContainer');
-    var showPersonalContainer = document.getElementById('showPersonalContainer');
-    var showPaymentContainer = document.getElementById('showPaymentContainer');
-    var backToAddressContainer = document.getElementById('backToAddressContainer');
-    
-
-
-    var personalInformation =document.getElementById('personal-information-container');
-    var addressInformation = document.getElementById('address-information');
-    var paymentInformation = document.getElementById('payment-information');
-
-    showAddressContainer.addEventListener('click', ()=>{
-        personalInformation.style.display = 'none';
-        addressInformation.style.display = 'block';
-        paymentInformation.style.display = 'none';
-        console.log('showAddressContainer');
-    });
-
-    backToAddressContainer.addEventListener('click', ()=>{
-        personalInformation.style.display = 'none';
-        addressInformation.style.display = 'block';
-        paymentInformation.style.display = 'none';
-        console.log('showAddressContainer');
-    });
-
-    showPersonalContainer.addEventListener('click', ()=>{
-        personalInformation.style.display = 'block';
-        addressInformation.style.display = 'none';
-        paymentInformation.style.display = 'none';
-        console.log('showPersonalContainer');
-    });
-    showPaymentContainer.addEventListener('click', ()=>{
-        paymentInformation.style.display = 'block';
-        personalInformation.style.display = 'none';
-        addressInformation.style.display = 'none';
-        console.log('showPaymentContainer');
-    });
-
-
-
-
-
-
-
-*/

@@ -26,7 +26,7 @@ window.addEventListener('resize', ()=>{
     } else{
         //display wide screen navigation
         nav.style.display = 'flex';
-        console.log('large screen')
+
     }
 })
 

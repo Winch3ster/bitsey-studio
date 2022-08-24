@@ -346,11 +346,16 @@
 <script src="./Javascript/webpage.js"></script>
 <script>
     var gameInvoked;
+    
+    //This function takes in the game index in the Json file as parameter
     function openGameView(gameId){
         window.open('game.html', "_self");
         gameInvoked = gameId;
+
+        //save the game index to local storage so that game-mapper-user.js or game-mapper.js can access the variable's value;
         localStorage.setItem("gameInvoked", gameInvoked);
-        console.log(gameInvoked);
+        //By default JavaScript does not allow one file to read variable from another file directly
+        //If import statement is used, the html will not be able to access the function in this script.
     }
     var cartBottom =document.getElementById('cart-bottom');
     cartBottom.addEventListener('click', ()=>{

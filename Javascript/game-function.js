@@ -20,6 +20,7 @@ function addItemToCart(){
     window.open('../server/sign-in-page.php', "_self")
 }
 
+//Open dialog message to prompt user tjhat item is added to cart
 function openDialog(){
     var dialogBox = document.getElementById('modal-box-section');
 
@@ -42,11 +43,8 @@ function sendJSON(){
     
     xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText); } }
 
-
-    //This FUCKING SHIT WORKS
     var data = JSON.stringify({ 'gameName': gameName, 'gameImageLink': gameImageLink, 'platform': platformSelected, 'amountToBuy': amountToBuy, 'price': price });
-    
-    
+
     xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
     xhr.send(data); 
 }

@@ -25,12 +25,13 @@
 
     echo $gameName;
     echo $platform;
-    $result = $conn->query($checkIfExistQuery);
+
+    $result = $conn->query($checkIfExistQuery);//check if the game (with the same platform) exist in the database
 
 
     if ($result->num_rows > 0){
+        //If the game already exist in the database, update the quantity instead of creating new record
         $getExistedQuantity = " SELECT quantity FROM cart WHERE game_name='$gameName' AND platform='$platform'";
-        echo "found it";
         $databaseQuantity = $conn->query($getExistedQuantity);
 
         $newQuantity = $databaseQuantity + $amountToBuy;
@@ -41,6 +42,7 @@
         $conn->query($updateQuantityQuery);
     } else {
 
+        //If the game(with same platform) does not exist in database, create a new record.
         if ($conn->query($insertQuery) === TRUE) {
             echo "New record created successfully";
         } else {

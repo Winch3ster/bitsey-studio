@@ -46,6 +46,7 @@
         header("Location: ../signed-in-user-views/store-user-signed-in.php");
         exit();
     } else {
+        //If worng credentials are given, show a dialog to indicate incorrect password or email
         echo "
         <div id='modal-box-container' class='modal-box-container' style='Display: block;'>
             <h2 style='color: rgb(245, 15, 15);'>Incorrect password or email</h2>
@@ -59,11 +60,11 @@
 
     ?>
 </body>
+
 <script>
     var backToSignIn = document.getElementById('backToSignIn');
     
     backToSignIn.addEventListener('click', ()=>{
-        console.log("Back btn pressed");
         window.open("./sign-in-page.php", "_self");
     })
 

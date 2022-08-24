@@ -7,6 +7,7 @@
     $gameName = $decoded_json['gameName'];
     $platform = $decoded_json['platform'];
 
+    //Remove targetted item from the cart
     $removeItemQuery = " DELETE FROM cart WHERE game_name='$gameName' AND platform='$platform' ";
 
     if ($conn->query($removeItemQuery) === TRUE) {
