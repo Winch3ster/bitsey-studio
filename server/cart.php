@@ -186,21 +186,7 @@
 <script src="../Javascript/webpage.js"></script>
 <script>
     updateSubtotal();
-
-    function removeSelectedGame( gameName, platform){
-        let item = document.getElementById(`${gameName}${platform}`);
-        item.remove();
-        updateSubtotal();
-        //Need game name and platform to know which game to be removed from database table
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "./remove-cart-item.php");
-        
-        xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText); } }
-        var data = JSON.stringify({ "gameName": gameName, "platform": platform });
-        xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
-        xhr.send(data); 
-    }
-
+    
     function updateSubtotal(){
 
         var cartList = document.getElementById('cart-list');
@@ -215,7 +201,25 @@
 
             subtotalSpan.innerText = subtotal.toFixed(2);
             console.log("Subtotal now: " +subtotal);
+            console.log("Subtotal is running " );
         } 
+    }
+
+
+    function removeSelectedGame( gameName, platform){
+        let item = document.getElementById(`${gameName}${platform}`);
+        item.remove();
+
+        updateSubtotal();
+
+        //Need game name and platform to know which game to be removed from database table
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "./remove-cart-item.php");
+        
+        xhr.onreadystatechange = function() { if (xhr.readyState === 4 && xhr.status === 200) { console.log(xhr.responseText); } }
+        var data = JSON.stringify({ "gameName": gameName, "platform": platform });
+        xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
+        xhr.send(data); 
     }
 
 </script>
