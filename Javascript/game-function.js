@@ -17,7 +17,7 @@ goBackToStoreBtn.addEventListener('click', ()=>
 
 
 function addItemToCart(){
-    window.open('../Views/server/sign-in-page.php', "_self")
+    window.open('../server/sign-in-page.php', "_self")
 }
 
 function openDialog(){
