@@ -111,7 +111,7 @@
                         // output data of each row
                         while($row = $result->fetch_assoc()) {
                             echo '
-                                <div id="'.$row["game_name"].$row["platform"].'" class="cart-game-block">
+                                <div id="'.$row["game_name"].$row["platform"].'" class="history-game-block">
                                     <div class="cart-game-img-container"><img src="'.$row["img_link"].' " alt=""></div>
                                     <div class="cart-block-content">
                                         <div class="cart-game-description">
@@ -190,7 +190,7 @@
     function removeSelectedGame( gameName, platform){
         let item = document.getElementById(`${gameName}${platform}`);
         item.remove();
-        
+        updateSubtotal();
         //Need game name and platform to know which game to be removed from database table
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "./remove-cart-item.php");
@@ -199,7 +199,6 @@
         var data = JSON.stringify({ "gameName": gameName, "platform": platform });
         xhr.setRequestHeader("Content-type", "application/json") // or "text/plain"
         xhr.send(data); 
-        updateSubtotal();
     }
 
     function updateSubtotal(){

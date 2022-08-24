@@ -85,6 +85,20 @@
     transition: 0.3s;
     border-bottom: 2px solid #e9e9f2;
 }
+.history-game-block{
+    position: relative;
+    width: 100%;
+    margin:auto;
+    margin-bottom: 5%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(3, 139, 165);
+    transition: 0.3s;
+    border-bottom: 2px solid #e9e9f2;
+}
+
+
 
 .cart-game-img-container{
     width: 20%;
