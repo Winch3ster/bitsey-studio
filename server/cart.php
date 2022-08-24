@@ -130,7 +130,7 @@
                                 echo            '<p class="quantity">Quantity: <span>'. $row["quantity"] . '</span></p>
                                         </div>
                                         <div class="cart-game-price">
-                                            <p>Price: <span class="game-price">'. $row["price"]*$row["quantity"]. '</span></p>
+                                            <p>Price: <span class="history-game-price">'. $row["price"]*$row["quantity"]. '</span></p>
                                         </div>
                                     </div>        
                                 </div>   

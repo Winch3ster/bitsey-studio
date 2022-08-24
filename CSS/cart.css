@@ -195,6 +195,14 @@
         align-items: center;
         padding-bottom: 5px;
     }
+    .history-game-block{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 5px;
+    }
     .cart-game-img-container{
         position: relative;
         width: 40%;
@@ -227,22 +235,6 @@
 
 
 
-
-/*
-<div class="cart-game-block">
-                    <div class="cart-game-img-container"><img src="./Images/Store-images/Games/bf1.jpg" alt=""></div>
-                    <div class="cart-block-content">
-                        <div class="cart-game-description">
-                            <p>Battlefield 1</p>
-                            <div class="label">ps4 </div>
-                            <p class="quantity">Quantity: <span>2</span></p>
-                        </div>
-                        <div class="cart-game-price">
-                            <p>Price: <span>189.00</span></p>
-                        </div>
-                        <button class="remove-btn">remove</button>
-                    </div>
-                </div>*/
 
 
 @media (min-width: 640px) { body {font-size:1rem;} }
