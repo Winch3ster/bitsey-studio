@@ -21,7 +21,7 @@
         session_start();
 
         $user = $_SESSION["user_id"];
-        $userName = $_SESSION["full_name"]
+        $userName = $_SESSION["full_name"];
         $userEmail = $_SESSION["user_email"];
     ?>
 
