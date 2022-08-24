@@ -107,7 +107,7 @@
     },
     
     {
-        "gameName" : "Tom Clancy Rainbow Six Siege",
+        "gameName" : "Tom Clancy's Rainbow Six Siege",
         "description": "Master the art of destruction and gadgetry in Tom Clancy's Rainbow Six Siege. Face intense close quarters combat, high lethality, tactical decision making, team play and explosive action within every moment. Experience a new era of fierce firefights and expert strategy born from the rich legacy of past Tom Clancy's Rainbow Six games.",
         "pictureUrl" : "Images/Store-images/Games/r6-siege.jpg",
         "availableQuantity": 10,
@@ -115,7 +115,7 @@
     },
 
     {
-        "gameName" : "No Man Sky",
+        "gameName" : "No Man's Sky",
         "description": "No Man's Sky is an action-adventure survival game developed and published by Hello Games. It was released worldwide for the PlayStation 4 and Microsoft Windows in August 2016, for Xbox One in July 2018, and for the PlayStation 5 and Xbox Series X and Series S consoles in November 2020.",
         "pictureUrl" : "Images/Store-images/Games/no-man-sky.jpg",
         "availableQuantity": 10,

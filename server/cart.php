@@ -203,6 +203,13 @@
             console.log("Subtotal now: " +subtotal);
             console.log("Subtotal is running " );
         } 
+
+        if (cartList.querySelector('.cart-game-block') === null){
+            var subtotalSpan = document.getElementById('subtotal');
+            subtotalSpan.innerText = 0;
+            console.log("removed last item in cart: " +subtotal);
+            console.log("Subtotal is running " );
+        } 
     }
 
 
