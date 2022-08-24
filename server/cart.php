@@ -103,7 +103,7 @@
             <div id="purchase-history-container">
             
                 <div id="shopping-cart-container">
-                    <li class="cart-list">';
+                    <li class="history-list">';
             
                     $getPurchaseHistory = "SELECT game_name, img_link, platform, quantity, price FROM purchased_items WHERE user_id='$user'";
                     $result = $conn->query($getPurchaseHistory);

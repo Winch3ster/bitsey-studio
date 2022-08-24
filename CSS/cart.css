@@ -35,6 +35,9 @@
 .cart-list{
     list-style: none;
 }
+.history-list{
+    list-style: none;
+}
 
 .check-out-container{
     position: relative;
