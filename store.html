@@ -189,6 +189,12 @@
         <br>
         <div class="four-column-container">
             <!--When the width of the viewport is small, the four column container will break down to 2 column container-->
+            <!--This is done but nesting 2 'two column container' inside another container and 
+                this outer container  and "two coulmn container" will have a flex display which display its child nodes(elements) side by side (For large screen).
+                For small screen,display of the four-column-container(outer container) will be set to "block" which display its child nodes below one another
+                Explaination can be found in the word documentation
+            -->
+
             <div class="two-column-container">
                 <div class="game-container two-column" onclick="openGameView(0);"><p>View</p><img src="Images/Store-images/Games/bfv.jpg" alt=""></div>
                 <div class="game-container two-column" onclick="openGameView(1)"><p>View</p><img src="Images/Store-images/Games/lego-star-wars.jpg" alt=""></div>
@@ -207,6 +213,17 @@
             <div class="two-column-container">
                 <div class="game-container two-column" onclick="openGameView(6)"><p>View</p><img src="Images/Store-images/Games/for-honor.jpg" alt=""></div>
                 <div class="game-container two-column" onclick="openGameView(7)"><p>View</p><img src="Images/Store-images/Games/monster-hunter-world.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="four-column-container">
+            <div class="two-column-container">
+                <div class="game-container two-column" onclick="openGameView(25)"><p>View</p><img src="Images/Store-images/Games/bf2042.jpg" alt=""></div>
+                <div class="game-container two-column" onclick="openGameView(26)"><p>View</p><img src="Images/Store-images/Games/codmw2019.jpg" alt=""></div>
+            </div>
+            <div class="two-column-container">
+                <div class="game-container two-column" onclick="openGameView(27)"><p>View</p><img src="Images/Store-images/Games/watchdogs2.jpg" alt=""></div>
+                <div class="game-container two-column" onclick="openGameView(28)"><p>View</p><img src="Images/Store-images/Games/cod-coldwar.jpg" alt=""></div>
             </div>
         </div>
   

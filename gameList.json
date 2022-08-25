@@ -189,5 +189,33 @@
         "pictureUrl" : "Images/Store-images/horizon-special-edi.jpg",
         "availableQuantity": 5,
         "price": 309.90
+    },
+    {
+        "gameName" : "Battlefield 2042",
+        "description": "Battlefield 2042 marks the return to the iconic all-out warfare of the franchise. Adapt and overcome dynamically-changing battlegrounds with the help of your squad and a cutting-edge arsenal. With support for 128 players*, prepare for unprecedented scale on vast environments. Take on massive experiences, from updated multiplayer modes like Conquest and Breakthrough to the all-new Battlefield™ Hazard Zone.",
+        "pictureUrl" : "Images/Store-images/Games/bf2042.jpg",
+        "availableQuantity": 10,
+        "price": 249.00
+    },
+    {
+        "gameName" : "Call of Duty Modern Warfare",
+        "description": "Call of Duty: Modern Warfare is a first-person shooter video game developed by Infinity Ward. It is a reboot of the original Modern Warfare trilogy. Part of the Modern Warfare series, Call of Duty: Modern Warfare is the sixteenth game in the Call of Duty franchise. Announced on May 30th, 2019, the game was released on October 25th, 2019.",
+        "pictureUrl" : "Images/Store-images/Games/codmw2019.jpg",
+        "availableQuantity": 5,
+        "price": 239.00
+    },
+    {
+        "gameName" : "Watch Dogs 2",
+        "description": "Play as Marcus Holloway, a brilliant young hacker living in the birthplace of the tech revolution, the San Francisco Bay Area. Team up with Dedsec, a notorious group of hackers, to execute the biggest hack in history; take down ctOS 2.0, an invasive operating system being used by criminal masterminds to monitor and manipulate citizens on a massive scale.",
+        "pictureUrl" : "Images/Store-images/Games/watchdogs2.jpg",
+        "availableQuantity": 5,
+        "price": 239.00
+    },
+    {
+        "gameName" : "Call of Duty Cold War",
+        "description": "Call of Duty: Black Ops Cold War is a first-person shooter video game developed by Treyarch and Raven Software. It is set in the early 1980s and is a direct sequel to the original Call of Duty: Black Ops. Call of Duty: Black Ops Cold War is the seventeenth game in the Call of Duty franchise and the sixth game in the Black Ops series. Announced on August 26th, 2020, the game was released on November 13th, 2020.",
+        "pictureUrl" : "Images/Store-images/Games/cod-coldwar.jpg",
+        "availableQuantity": 5,
+        "price": 249.00
     }
 ]

@@ -36,7 +36,9 @@
             <h2>Address</h2>
             <p>Bitsey Malaysia, Kuala Lumpur City Centre, 50088 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.</p>
             <p>Contact us via email or social media</p>
-            <p>Email: <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">info@bitsey.com</a></p>
+
+            <!--Links to external website-->
+            <p>Email: <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">info@bitsey.com</a></p> <!--This is a made up link, there is no such email-->
             <p>Twitter: <a href="https://twitter.com/home" target="_blank">@Bitsey</a></p>
             <p>Instagram: <a href="https://www.instagram.com/" target="_blank">Bitsey_Studio</a></p>
         </div>

@@ -232,7 +232,18 @@
                 <div class="game-container two-column" onclick="openGameView(7)"><p>View</p><img src="../Images/Store-images/Games/monster-hunter-world.jpg" alt=""></div>
             </div>
         </div>
-  
+    
+        <div class="four-column-container">
+            <div class="two-column-container">
+                <div class="game-container two-column" onclick="openGameView(25)"><p>View</p><img src="../Images/Store-images/Games/bf2042.jpg" alt=""></div>
+                <div class="game-container two-column" onclick="openGameView(26)"><p>View</p><img src="../Images/Store-images/Games/codmw2019.jpg" alt=""></div>
+            </div>
+            <div class="two-column-container">
+                <div class="game-container two-column" onclick="openGameView(27)"><p>View</p><img src="../Images/Store-images/Games/watchdogs2.jpg" alt=""></div>
+                <div class="game-container two-column" onclick="openGameView(28)"><p>View</p><img src="../Images/Store-images/Games/cod-coldwar.jpg" alt=""></div>
+            </div>
+        </div>
+
     </div>
 
     <hr style="background-color: grey; width: 70%; height: 1px; margin-bottom: 1%; margin-top: 1%;">
