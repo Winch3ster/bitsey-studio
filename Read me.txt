@@ -3,7 +3,9 @@ Run XAMPP
 goto: http://localhost/website/Views/index.html
 
 
-updating changes to website:
+
+Remote changes to code in github and heroku
+updating changes to remote website:
 1)git add .
 2)git commit -m "-message here-"
 3)git push -u origin main
