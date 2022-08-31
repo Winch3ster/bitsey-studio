@@ -61,7 +61,7 @@
                 </p>
                 <div class="btn-container">
                     <button class="primary-btn-style" onclick="openGameView(22)">View Game</button>
-                    <button class="secondary-btn-style" id="watch-trailer-btn">Watch Trailer</button>
+                    <button class="secondary-btn-style"onclick="openTrailer()" >Watch Trailer</button>
                 </div>
             </div>
        </div>
@@ -384,12 +384,20 @@
         window.open("./server/sign-in-page.php", "_self")
     });
 
+    function openTrailer(){
+        console.log("Watch trailer btn pressed");
+        window.open("https://www.youtube.com/watch?v=Lq594XmpPBg", "_blank");
+    }
+    /*
     var watchTrailerBtn = document.getElementById('watch-trailer-btn');
+
+
     watchTrailerBtn.addEventListener('click', ()=>{
         console.log("Watch trailer btn pressed");
         window.open("https://www.youtube.com/watch?v=Lq594XmpPBg", "_blank");
         
     });
+    */
 </script>
 </html>
 
