@@ -8,11 +8,8 @@ let nav = document.getElementById('navigation-container');
 //display appriopriate navigation menu when screen is resized
 window.addEventListener('resize', ()=>{
     let windowSize = window.innerWidth;
-
-
     if(windowSize <= 650){
         //display small screen navigation
-
 
         //if not displaying, the set it to none just on case someone open it but resize the window back to wide then small again
         if(smallNavigationMenuIsDisplaying === false){ 
@@ -26,7 +23,6 @@ window.addEventListener('resize', ()=>{
     } else{
         //display wide screen navigation
         nav.style.display = 'flex';
-
     }
 })
 

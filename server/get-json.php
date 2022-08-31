@@ -4,7 +4,7 @@
 
     $user = $_SESSION["user_id"];
 
-    //Receive json file from gmae-function.js
+    //Receive json file from game-function.js
     $json = file_get_contents('php://input');
 
 

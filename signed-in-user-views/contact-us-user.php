@@ -29,6 +29,7 @@
         </div>
     </header>
 
+        <!--Contact Us main container to fit content-->
     <div class="contact-us-container">
         <div class="contact-us-content">
             <h1>Contact Us</h1>
@@ -38,7 +39,8 @@
             <p>Contact us via email or social media</p>
 
             <!--Links to external website-->
-            <p>Email: <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">info@bitsey.com</a></p> <!--This is a made up link, there is no such email-->
+            <!--These are made up links, there is no such email nor social media accounts exist-->
+            <p>Email: <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">info@bitsey.com</a></p>
             <p>Twitter: <a href="https://twitter.com/home" target="_blank">@Bitsey</a></p>
             <p>Instagram: <a href="https://www.instagram.com/" target="_blank">Bitsey_Studio</a></p>
         </div>

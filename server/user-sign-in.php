@@ -27,7 +27,7 @@
         //query for the user_id from the database
         $userId = $conn->query("SELECT user_id, full_name, email FROM `customer_details` WHERE email='$email' AND user_password='$password'");
 
-        //Read the returned result and save it in a variable called $user
+        //Read the returned results and save them in variables 
         $user;
         $userName;
         $userEmail;
@@ -67,7 +67,6 @@
     backToSignIn.addEventListener('click', ()=>{
         window.open("./sign-in-page.php", "_self");
     })
-
 </script>
 
 

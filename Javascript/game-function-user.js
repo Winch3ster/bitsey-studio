@@ -59,13 +59,6 @@ function sendJSON(){
 
 }
 
-
-
-
-
-
-
-
 function increaseAmount(){
     //If the users try to increase the quantity higher than available quantity, prompt error
     if (amountToBuy >= localStorage.getItem('quantity')){

@@ -13,13 +13,14 @@
 <?php
 
     include_once("./database-connection.php");
-
+    //Each variable corrspond to each field in the form
+    //Customer information
     $fullName = $_POST["name"];
     $email = $_POST["email"];
     $password = $_POST["password"];
     $contact = $_POST["contact"];
 
-    //adress
+    //adress information
     $line1 = $_POST["line1"];
     $line2 = $_POST["line2"];
     $city = $_POST["city"];
@@ -43,6 +44,7 @@
     $result = $conn->query($checkIfExistQuery);
 
 
+    //If the user successfully signed in, render a modal box to indicate that the registration process was a success.
     if ($result->num_rows > 0){
         echo "
         <div id='modal-box-container' class='modal-box-container' style='Display: block;'>
@@ -55,7 +57,7 @@
         ";
         
     } else {
-
+        //If the entered email exist in the database, then prompt user to sign in instead.
         if ($conn->query($saveCustomerDetailsQuery) === TRUE) {
             echo "
                 <div id='modal-box-container' class='modal-box-container' style='Display: block;'>
