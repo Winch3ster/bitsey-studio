@@ -168,8 +168,8 @@
             <img src="../Images/AC Rogue web wallpaper.jpg" alt="">
         </picture>
 
-        <div class="discover-content-container" id="discover-content-container">
-            <div class="discover-content">
+        <div class="discover-content-container">
+            <div class="discover-content" id="discover-content-container">
                 <h1>Discover our games</h1>
                 <div class="small-screen-content">
                     <p>Visit our store to discover more games!</p>
