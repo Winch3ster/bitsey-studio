@@ -168,7 +168,7 @@
             <img src="../Images/AC Rogue web wallpaper.jpg" alt="">
         </picture>
 
-        <div class="discover-content-container">
+        <div class="discover-content-container" id="discover-content-container">
             <div class="discover-content">
                 <h1>Discover our games</h1>
                 <div class="small-screen-content">
@@ -299,6 +299,10 @@
     function goToStore(){
         window.open("./store-user-signed-in.php", "_self");
     }
+
+    discoverStoreBtn.addEventListener('click', ()=>{
+        window.open("./store-user-signed-in.php", "_self");
+    })
 </script>
 
 

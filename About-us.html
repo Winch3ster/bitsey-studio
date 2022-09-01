@@ -170,7 +170,7 @@
             <img src="Images/AC Rogue web wallpaper.jpg" alt="">
         </picture>
 
-        <div class="discover-content-container">
+        <div class="discover-content-container" id="discover-content-container">
             <div class="discover-content">
                 <h1>Discover our games</h1>
                 <div class="small-screen-content">
@@ -261,6 +261,7 @@
 <script>
     var smallNavigationMenuIsDisplaying = false; //check if small-screen navigation menu is displaying
     var dropDownMenu = document.getElementById('drop-down');
+    var discoverStoreBtn = document.getElementById('discover-content-container');
     let nav = document.getElementById('navigation-container');
 
     //display appriopriate navigation menu when screen is resized
@@ -297,9 +298,13 @@
     }
 
     function goToStore(){
+        console.log("go to store btn pressed")
         window.open("./store.html", "_self");
     }
 
+    discoverStoreBtn.addEventListener('click', ()=>{
+        window.open("./store.html", "_self");
+    })
 </script>
 
 
