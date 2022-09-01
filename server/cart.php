@@ -157,13 +157,13 @@
             <div class="footer-content">
                 <div class="footer-links-container">
                     <ul class="column1">
-                        <li><a href="../store.html">Store</a></li>
-                        <li><a href="">Contact us</a></li>
+                        <li><a href="../signed-in-user-views/store-user-signed-in.php">Store</a></li>
+                        <li><a href="../signed-in-user-views/contact-us-user.php">Contact us</a></li>
                         <li><a href="https://www.google.com/maps/place/Kuala+Lumpur,+Federal+Territory+of+Kuala+Lumpur">Location</a></li>
                     </ul>
                     <ul class="column2">
-                        <li><a href="../About-us.html">About us</a></li>
-                        <li><a href="../join-us.html">Career</a></li>
+                        <li><a href="../signed-in-user-views/About-us-user.php">About us</a></li>
+                        <li><a href="../signed-in-user-views/contact-us-user.php">Career</a></li>
                     </ul>
                 </div>
                 <div class="footer-follow-us-container">
