@@ -301,8 +301,9 @@
     }
 
     discoverStoreBtn.addEventListener('click', ()=>{
+        console.log("go to store div");
         window.open("./store-user-signed-in.php", "_self");
-    })
+    });
 </script>
 
 
